@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
+EntityManager.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
+SystemManager.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
+vector
+-
+deque
+-
+unordered_map
+-
+typeinfo
+-
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
+unordered_map
+-
+typeinfo
+-
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/main.cpp
+Engine.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
+iostream
+-
+

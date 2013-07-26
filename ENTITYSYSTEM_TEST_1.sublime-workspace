@@ -1,0 +1,564 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sys",
+				"system"
+			],
+			[
+				"erase",
+				"eraseItr"
+			],
+			[
+				"m_",
+				"m_activeEntities"
+			],
+			[
+				"Comp",
+				"Component"
+			],
+			[
+				"Enti",
+				"EntityProcessingSystem"
+			],
+			[
+				"Inp",
+				"InputSystem"
+			],
+			[
+				"bge",
+				"begin"
+			],
+			[
+				"m_en",
+				"m_enabled"
+			],
+			[
+				"sy",
+				"SystemManager"
+			],
+			[
+				"m",
+				"m_name"
+			],
+			[
+				"is",
+				"issueEntityDeletion"
+			],
+			[
+				"m_ene",
+				"m_entityDeleteQueue"
+			],
+			[
+				"com",
+				"componentName"
+			],
+			[
+				"C",
+				"ComponentMapper"
+			],
+			[
+				"ha",
+				"hashCode"
+			],
+			[
+				"has",
+				"hash_code"
+			],
+			[
+				"hash",
+				"hashCode"
+			],
+			[
+				"remo",
+				"removeComponent"
+			],
+			[
+				"rel",
+				"recyclableEntities"
+			],
+			[
+				"rec",
+				"recyclableEntities"
+			],
+			[
+				"Ent",
+				"Entity"
+			],
+			[
+				"m_e",
+				"m_entities"
+			],
+			[
+				"EN",
+				"EntityManager"
+			],
+			[
+				"Siz",
+				"size_t"
+			],
+			[
+				"prin",
+				"printInfo"
+			],
+			[
+				"Eni",
+				"EntityManager"
+			],
+			[
+				"remove",
+				"removeAllEntities"
+			],
+			[
+				"beg",
+				"begin"
+			],
+			[
+				"en",
+				"entity"
+			],
+			[
+				"m_ent",
+				"m_entities"
+			],
+			[
+				"m_co",
+				"m_components"
+			],
+			[
+				"Co",
+				"component"
+			],
+			[
+				"m_c",
+				"m_componentDeleteQueue"
+			],
+			[
+				"m_enti",
+				"m_entityDeleteQueue"
+			],
+			[
+				"Entit",
+				"Entity"
+			],
+			[
+				"Entity",
+				"EntityManager"
+			],
+			[
+				"En",
+				"Entity"
+			],
+			[
+				"hahs",
+				"hashCode"
+			],
+			[
+				"c",
+				"cItr"
+			],
+			[
+				"hasdh",
+				"hashCode"
+			],
+			[
+				"PRO",
+				"PROJ_EXE_NAME"
+			],
+			[
+				"PROJ",
+				"PROJ_BUILD_DIR"
+			],
+			[
+				"PROJ_BUI",
+				"PROJ_BUILD_DIR"
+			],
+			[
+				"h",
+				"hashCode"
+			],
+			[
+				"co",
+				"component"
+			],
+			[
+				"In",
+				"InputComponent"
+			],
+			[
+				"p",
+				"push_back"
+			],
+			[
+				"P",
+				"points"
+			],
+			[
+				"string",
+				"stringT"
+			],
+			[
+				"m_is",
+				"m_listening"
+			],
+			[
+				"pak",
+				"packetType"
+			],
+			[
+				"Packet",
+				"PacketTypes"
+			],
+			[
+				"IP",
+				"IpAddress"
+			],
+			[
+				"con",
+				"connectionCheck"
+			],
+			[
+				"packet",
+				"packetType"
+			],
+			[
+				"na",
+				"namePacket"
+			],
+			[
+				"PAck",
+				"PacketTypes"
+			],
+			[
+				"pack",
+				"packetType"
+			],
+			[
+				"m_li",
+				"m_listener"
+			],
+			[
+				"buid",
+				"buildPath"
+			],
+			[
+				"buil",
+				"buildPath"
+			],
+			[
+				"Test",
+				"Testus"
+			],
+			[
+				"i",
+				"inc	#include \"…\""
+			]
+		]
+	},
+	"build_system": "Packages/User/CompileScript.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"set syntax CM",
+				"Set Syntax: CMake Listfile"
+			],
+			[
+				"syntax cm",
+				"Set Syntax: CMake Listfile"
+			],
+			[
+				"syntax ma",
+				"Set Syntax: Makefile"
+			]
+		],
+		"width": 404.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp",
+		"/usr/include/c++/4.7/bits/unordered_map.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/InputComponent.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Component.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeLists.txt",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ComponentMapper.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/main.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/In file included from /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/In file included from /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Component.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/In file included from /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp",
+		"/home/symphonym/Desktop/Projects/DailyProgrammer_INTERMEDIATE_129/solution 1/main.cpp",
+		"/home/symphonym/Desktop/Projects/SFML_Network_TEST_1/CMakeLists.txt",
+		"/home/symphonym/Desktop/Projects/SFML_Network_TEST_1/src/server/Server.cpp",
+		"/home/symphonym/Desktop/Projects/SFML_Network_TEST_1/linux/x64/include/SFML/Network/TcpListener.hpp",
+		"/home/symphonym/Desktop/Projects/SFML_Network_TEST_1/Makefile",
+		"/home/symphonym/Desktop/Projects/SFML_Network_TEST_1/src/main.cpp",
+		"/home/symphonym/Desktop/Projects/SFML_Network_TEST_1/compile.sh",
+		"/home/symphonym/Desktop/Projects/SFML_Network_TEST_1/src/CMakeLists.txt",
+		"/home/symphonym/.config/sublime-text-3/Packages/User/CMake_Rel.sublime-build",
+		"/home/symphonym/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/symphonym/.config/sublime-text-3/Packages/User/CompileScript.sublime-build",
+		"/home/symphonym/Desktop/Projects/SFML_Network_TEST_1/src/compile.sh",
+		"/home/symphonym/Desktop/Projects/SConsTest/builds/Linux/SConscript",
+		"/home/symphonym/Desktop/Projects/SConsTest/SConstruct",
+		"/home/symphonym/Desktop/Projects/SConsTest/src/SConstruct",
+		"/home/symphonym/Desktop/Projects/SConsTest/src/main.cpp",
+		"/home/symphonym/Desktop/Projects/SConsTest/src/helloworld",
+		"/home/symphonym/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"system->getName()",
+			"const std::type_info &typeInfo",
+			";",
+			" ",
+			";",
+			"m_engine",
+			"m_entityManager",
+			"static_cast",
+			"entites",
+			"remove",
+			"Total",
+			"TODO",
+			";",
+			"//",
+			"id",
+			",",
+			"int",
+			";",
+			"TODO",
+			"queue",
+			" ",
+			"nextEntityDeletion",
+			";",
+			"eItr",
+			"zsecond",
+			"component->getName()",
+			"N",
+			"n",
+			"send",
+			"getElapsedtime",
+			"send",
+			"itr2",
+			"seconds",
+			"unique_ptr",
+			"i",
+			"server",
+			"Server",
+			"Client",
+			"Server",
+			"remember",
+			"GRAPHICS",
+			"HEllo",
+			"stringTest",
+			"intTest",
+			"stringTest",
+			"error",
+			"Testus",
+			"280",
+			"test"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"m_engine"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 214.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"comp",
+				"src/ComponentMapper.h"
+			],
+			[
+				"main",
+				"src/main.cpp"
+			],
+			[
+				"co",
+				"compile.sh"
+			],
+			[
+				"system",
+				"src/SystemManager.cpp"
+			],
+			[
+				"",
+				"src/EntityProcessingSystem.h"
+			],
+			[
+				"enti",
+				"src/Entity.h"
+			],
+			[
+				"mai",
+				"src/main.cpp"
+			],
+			[
+				"entitym",
+				"src/EntityManager.cpp"
+			],
+			[
+				"entiy.c",
+				"src/Entity.cpp"
+			],
+			[
+				"entit",
+				"src/EntityManager.h"
+			],
+			[
+				"entity.cpp",
+				"src/Entity.cpp"
+			],
+			[
+				"entity.h",
+				"src/Entity.h"
+			],
+			[
+				"en",
+				"src/Entity.h"
+			],
+			[
+				"syste",
+				"src/SystemManager.h"
+			],
+			[
+				"sys",
+				"src/SystemManager.h"
+			],
+			[
+				"main.cpp",
+				"src/main.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/Projects/SFML_Network_TEST_1/SFML_Network_Test_1.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
