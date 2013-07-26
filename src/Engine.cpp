@@ -47,4 +47,8 @@ namespace jl
 	{
 		return m_systemManager;
 	}
+	WindowManager& Engine::getWindowManager()
+	{
+		return m_windowManager;
+	}
 };

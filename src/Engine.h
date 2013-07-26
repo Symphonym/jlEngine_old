@@ -3,6 +3,7 @@
 
 #include "EntityManager.h"
 #include "SystemManager.h"
+#include "WindowManager.h"
 
 namespace jl
 {
@@ -14,7 +15,7 @@ namespace jl
 
 		EntityManager m_entityManager;
 		SystemManager m_systemManager;
-		// WindowManager m_windowManager;
+		WindowManager m_windowManager;
 		// StateManager m_stateManager;
 		// SceneManager m_sceneManager;
 
@@ -33,13 +34,12 @@ namespace jl
 
 		// void push
 
-		Entity& createEntity();
-
 		std::size_t getFps() const;
 		float getDelta() const;
 
 		EntityManager& getEntityManager();
 		SystemManager& getSystemManager();
+		WindowManager& getWindowManager();
 	};
 };
 

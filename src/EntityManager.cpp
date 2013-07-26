@@ -68,7 +68,6 @@ namespace jl
 			
 			stripEntity(entity->getId());
 			entity->refresh();
-			//TODO entity->refresh();
 
 			// Move Entity to recycle stack
 			m_removedAndAvailable.push_back(entity);

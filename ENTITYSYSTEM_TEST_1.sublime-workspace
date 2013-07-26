@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"Wi",
+				"WindowManager"
+			],
+			[
+				"WI",
+				"Window"
+			],
+			[
+				"PROJ_LIB",
+				"PROJ_LIBRARY_DIR"
+			],
+			[
+				"PROJ_LIBRA",
+				"PROJ_LIBRARY_EXTENSION"
+			],
+			[
+				"PROJ",
+				"PROJ_INCLUDE_DIR"
+			],
+			[
+				"PO",
+				"PROJ_SYS_ARCH"
+			],
+			[
 				"sys",
 				"system"
 			],
@@ -168,10 +192,6 @@
 				"PROJ_EXE_NAME"
 			],
 			[
-				"PROJ",
-				"PROJ_BUILD_DIR"
-			],
-			[
 				"PROJ_BUI",
 				"PROJ_BUILD_DIR"
 			],
@@ -296,6 +316,7 @@
 	},
 	"file_history":
 	[
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp",
 		"/usr/include/c++/4.7/bits/unordered_map.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/InputComponent.h",
@@ -344,6 +365,7 @@
 		"height": 94.0,
 		"where_history":
 		[
+			"",
 			"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles",
 			""
 		]
@@ -353,6 +375,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"TODO",
+			";",
+			"createWindow",
+			" ",
+			"PROJ_LIB_DIR",
+			"LINUX",
+			"m_entityDeleteQueue",
 			"system->getName()",
 			"const std::type_info &typeInfo",
 			";",
@@ -409,6 +438,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"m_entityRecycleQueue",
 			"m_engine"
 		],
 		"reverse": false,

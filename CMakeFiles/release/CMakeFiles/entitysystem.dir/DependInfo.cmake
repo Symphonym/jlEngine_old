@@ -10,6 +10,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/InputComponent.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o"
+  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/main.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
@@ -20,6 +21,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "../../linux/x64/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

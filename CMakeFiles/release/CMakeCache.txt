@@ -161,6 +161,21 @@ ENTITYSYSTEM_TEST_1_BINARY_DIR:STATIC=/home/symphonym/Desktop/Projects/ENTITYSYS
 //Value Computed by CMake
 ENTITYSYSTEM_TEST_1_SOURCE_DIR:STATIC=/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1
 
+//Path to a library.
+SFML_AUDIO_LIB:FILEPATH=/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/linux/x64/lib/libsfml-audio.so
+
+//Path to a library.
+SFML_GRAPHICS_LIB:FILEPATH=/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/linux/x64/lib/libsfml-graphics.so
+
+//Path to a library.
+SFML_NETWORK_LIB:FILEPATH=/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/linux/x64/lib/libsfml-network.so
+
+//Path to a library.
+SFML_SYSTEM_LIB:FILEPATH=/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/linux/x64/lib/libsfml-system.so
+
+//Path to a library.
+SFML_WINDOW_LIB:FILEPATH=/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/linux/x64/lib/libsfml-window.so
+
 
 ########################
 # INTERNAL cache entries

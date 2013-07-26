@@ -255,6 +255,30 @@ src/SystemManager.cpp.s:
 	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/SystemManager.cpp.s
 .PHONY : src/SystemManager.cpp.s
 
+src/WindowManager.o: src/WindowManager.cpp.o
+.PHONY : src/WindowManager.o
+
+# target to build an object file
+src/WindowManager.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o
+.PHONY : src/WindowManager.cpp.o
+
+src/WindowManager.i: src/WindowManager.cpp.i
+.PHONY : src/WindowManager.i
+
+# target to preprocess a source file
+src/WindowManager.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/WindowManager.cpp.i
+.PHONY : src/WindowManager.cpp.i
+
+src/WindowManager.s: src/WindowManager.cpp.s
+.PHONY : src/WindowManager.s
+
+# target to generate assembly for a file
+src/WindowManager.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/WindowManager.cpp.s
+.PHONY : src/WindowManager.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... src/SystemManager.o"
 	@echo "... src/SystemManager.i"
 	@echo "... src/SystemManager.s"
+	@echo "... src/WindowManager.o"
+	@echo "... src/WindowManager.i"
+	@echo "... src/WindowManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

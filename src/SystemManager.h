@@ -40,9 +40,6 @@ namespace jl
 				setSystemStatus(system, status);
 		};
 
-		// Iterating through all enabled Systems and process their entities
-		void processSystems();
-
 		// Refreshes the Systems with the specified Entity, checking
 		// if it has one of it's targeted components.
 		bool refreshEntity(Entity &entity);
