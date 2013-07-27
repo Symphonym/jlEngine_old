@@ -45,17 +45,31 @@ namespace jl
 		};
 		void removeComponent(std::size_t hashCode); // Used almost exclusively internally
 
+		// Removes all components and sets the Entity's state to disabled, as
+		// all functionality has been removed from it.
+		void removeAllComponents();
+
 		// Marks entity for recycling
 		void recycle();
 		// Refreshes Entity amongst the Systems
 		void refresh();
 
-		// Removes all components and sets the Entity's state to disabled, as
-		// all functionality has been removed from it.
-		void removeAllComponents();
-
+		// Set a custom string tag for an Entity, multiple tags per entity are supported.
+		void setTag(const std::string &tag);
+		// Add the Entity to the Entity group by the specified name. The same
+		// entity can be located in multiple groups.
+		void setGroup(const std::string &group);
 		// Whether or not the Entity should be processed by Systems
-		void setEnabled(bool enabled);
+		void setStatus(bool status);
+
+		// Removes single tag associated with Entity or all tags
+		// associated with Entity respectively.
+		void removeTag(const std::string &tag);
+		void removeTags();
+		// Remove Entity from a single group or all groups it's
+		// associated with respectively.
+		void removeFromGroup(const std::string &group);
+		void removeFromGroups();
 
 
 		// Returns a pointer to the component of type T. If such a component

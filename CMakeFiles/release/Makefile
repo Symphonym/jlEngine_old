@@ -255,6 +255,30 @@ src/SystemManager.cpp.s:
 	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/SystemManager.cpp.s
 .PHONY : src/SystemManager.cpp.s
 
+src/TagManager.o: src/TagManager.cpp.o
+.PHONY : src/TagManager.o
+
+# target to build an object file
+src/TagManager.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/TagManager.cpp.o
+.PHONY : src/TagManager.cpp.o
+
+src/TagManager.i: src/TagManager.cpp.i
+.PHONY : src/TagManager.i
+
+# target to preprocess a source file
+src/TagManager.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/TagManager.cpp.i
+.PHONY : src/TagManager.cpp.i
+
+src/TagManager.s: src/TagManager.cpp.s
+.PHONY : src/TagManager.s
+
+# target to generate assembly for a file
+src/TagManager.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/TagManager.cpp.s
+.PHONY : src/TagManager.cpp.s
+
 src/WindowManager.o: src/WindowManager.cpp.o
 .PHONY : src/WindowManager.o
 
@@ -330,6 +354,9 @@ help:
 	@echo "... src/SystemManager.o"
 	@echo "... src/SystemManager.i"
 	@echo "... src/SystemManager.s"
+	@echo "... src/TagManager.o"
+	@echo "... src/TagManager.i"
+	@echo "... src/TagManager.s"
 	@echo "... src/WindowManager.o"
 	@echo "... src/WindowManager.i"
 	@echo "... src/WindowManager.s"

@@ -64,9 +64,34 @@ namespace jl
 		m_components.clear();
 	}
 
-	void Entity::setEnabled(bool enabled)
+	void Entity::setTag(const std::string &tag)
 	{
-		m_engine->getEntityManager().setEntityEnabled(*this, enabled);
+		m_engine->getTagManager().tagEntity(*this, tag);
+	}
+	void Entity::setGroup(const std::string &group)
+	{
+		// TODO
+	}
+	void Entity::setStatus(bool status)
+	{
+		m_engine->getEntityManager().setEntityStatus(*this, status);
+	}
+
+	void Entity::removeTag(const std::string &tag)
+	{
+		m_engine->getTagManager().untagEntity(tag);
+	}
+	void Entity::removeTags()
+	{
+		m_engine->getTagManager().untagEntity(*this);
+	}
+	void Entity::removeFromGroup(const std::string &group)
+	{
+		// TODO
+	}
+	void Entity::removeFromGroups()
+	{
+		// TODO
 	}
 
 	Component* Entity::getComponent(std::size_t hashCode)

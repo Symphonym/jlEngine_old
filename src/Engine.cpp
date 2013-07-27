@@ -51,4 +51,8 @@ namespace jl
 	{
 		return m_windowManager;
 	}
+	TagManager& Engine::getTagManager()
+	{
+		return m_tagManager;
+	}
 };

@@ -5,6 +5,7 @@
 #include <deque>
 #include <unordered_map>
 #include <typeinfo>
+#include "IdType.h"
 
 
 namespace jl
@@ -18,15 +19,15 @@ namespace jl
 
 		// Simplify type used for Unique ID so it changed easily be
 		// changed if neccesary.
-		typedef int IdRange;
+		//typedef int IdType;
 
-		IdRange m_uniqueEntityId;
-		IdRange m_activeEntityCount; // Entities being actively processed
+		IdType m_uniqueEntityId;
+		IdType m_activeEntityCount; // Entities being actively processed
 
 		// Queue for entities awaiting recycling (Allowing Entities to delete themselves)
-		std::deque<IdRange> m_entityRecycleQueue;
+		std::deque<IdType> m_entityRecycleQueue;
 
-		std::unordered_map<IdRange, Entity*> m_entities;
+		std::unordered_map<IdType, Entity*> m_entities;
 		// Entities available for recycling.
 		std::vector<Entity*> m_removedAndAvailable;
 
@@ -53,22 +54,22 @@ namespace jl
 
 		// Marks an entity for recycling
 		void recycleEntity(Entity &entity);
-		void recycleEntity(IdRange id);
+		void recycleEntity(IdType id);
 		// Marks all active entities for recycling
 		void recycleAllEntities();
 
 		// Enables/Disables entity for processing by Systems
-		void setEntityEnabled(Entity &entity, bool enabled);
+		void setEntityStatus(Entity &entity, bool status);
 
 		// Strips entity of its components
-		void stripEntity(IdRange id);
+		void stripEntity(IdType id);
 
-		Entity* getEntity(IdRange id);
+		Entity& getEntity(IdType id);
 
-		IdRange getInactiveEntityCount() const;
-		IdRange getActiveEntityCount() const;
-		IdRange getRecyclableEntityCount() const;
-		IdRange getTotalEntityCount() const;
+		IdType getInactiveEntityCount() const;
+		IdType getActiveEntityCount() const;
+		IdType getRecyclableEntityCount() const;
+		IdType getTotalEntityCount() const;
 
 		std::size_t getRecycleQueueSize() const;
 	};

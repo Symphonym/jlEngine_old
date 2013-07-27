@@ -58,23 +58,18 @@ namespace jl
 		if(m_entityRecycleQueue.empty())
 			return false;
 
-		Entity* entity = getEntity(m_entityRecycleQueue.front());
-		auto itr = m_entities.find(entity->getId());
+		Entity& entity = getEntity(m_entityRecycleQueue.front());
 
-		if(entity != nullptr)
-		{
-			if(entity->isEnabled())
-				--m_activeEntityCount;
-			
-			stripEntity(entity->getId());
-			entity->refresh();
+		if(entity.isEnabled())
+			--m_activeEntityCount;
+		
+		stripEntity(entity.getId());
+		entity.refresh();
 
-			// Move Entity to recycle stack
-			m_removedAndAvailable.push_back(entity);
-		}
+		// Move Entity to recycle stack
+		m_removedAndAvailable.push_back(&entity);
 
-		if(itr != m_entities.end())
-			m_entities.erase(itr);
+		m_entities.erase(entity.getId());
 
 		m_entityRecycleQueue.pop_front();
 		return true;
@@ -84,7 +79,7 @@ namespace jl
 	{
 		m_entityRecycleQueue.push_back(entity.getId());
 	}
-	void EntityManager::recycleEntity(IdRange id)
+	void EntityManager::recycleEntity(IdType id)
 	{
 		m_entityRecycleQueue.push_back(id);
 	}
@@ -94,38 +89,35 @@ namespace jl
 			recycleEntity(itr->first);
 	}
 
-	void EntityManager::setEntityEnabled(Entity &entity, bool enabled)
+	void EntityManager::setEntityStatus(Entity &entity, bool enabled)
 	{
 		entity.m_enabled = enabled;
 		m_activeEntityCount += enabled ? 1 : -1;
 	}
 
-	void EntityManager::stripEntity(IdRange id)
+	void EntityManager::stripEntity(IdType id)
 	{
-		Entity* entity = getEntity(id);
-		if(entity != nullptr)
-			entity->removeAllComponents();
+		getEntity(id).removeAllComponents();
 	}
 
-	Entity* EntityManager::getEntity(IdRange id)
+	Entity& EntityManager::getEntity(IdType id)
 	{
-		auto itr = m_entities.find(id);
-		return itr != m_entities.end() ? itr->second : nullptr;
+		return *m_entities[id];
 	}
 
-	EntityManager::IdRange EntityManager::getInactiveEntityCount() const
+	IdType EntityManager::getInactiveEntityCount() const
 	{
 		return m_entities.size() - m_activeEntityCount;
 	}
-	EntityManager::IdRange EntityManager::getActiveEntityCount() const
+	IdType EntityManager::getActiveEntityCount() const
 	{
 		return m_activeEntityCount;
 	}
-	EntityManager::IdRange EntityManager::getRecyclableEntityCount() const
+	IdType EntityManager::getRecyclableEntityCount() const
 	{
 		return m_removedAndAvailable.size();
 	}
-	EntityManager::IdRange EntityManager::getTotalEntityCount() const
+	IdType EntityManager::getTotalEntityCount() const
 	{
 		return m_removedAndAvailable.size() + m_entities.size();
 	}

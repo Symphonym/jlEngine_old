@@ -561,6 +561,8 @@ SystemManager.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
 WindowManager.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h
+TagManager.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp
 Entity.h
@@ -587,6 +589,8 @@ unordered_map
 -
 typeinfo
 -
+IdType.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp
 EntityProcessingSystem.h
@@ -608,10 +612,26 @@ typeinfo
 string
 -
 
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
+
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
 unordered_map
 -
 typeinfo
+-
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.cpp
+TagManager.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
+Entity.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h
+vector
+-
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
+unordered_map
+-
+string
 -
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h
@@ -623,12 +643,14 @@ SFML/Window.hpp
 -
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/main.cpp
-Engine.h
-/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
 iostream
 -
 SFML/Graphics.hpp
 -
 SFML/System.hpp
 -
+Engine.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
+Entity.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h
 

@@ -4,6 +4,7 @@
 #include "EntityManager.h"
 #include "SystemManager.h"
 #include "WindowManager.h"
+#include "TagManager.h"
 
 namespace jl
 {
@@ -16,6 +17,7 @@ namespace jl
 		EntityManager m_entityManager;
 		SystemManager m_systemManager;
 		WindowManager m_windowManager;
+		TagManager m_tagManager;
 		// StateManager m_stateManager;
 		// SceneManager m_sceneManager;
 
@@ -40,6 +42,7 @@ namespace jl
 		EntityManager& getEntityManager();
 		SystemManager& getSystemManager();
 		WindowManager& getWindowManager();
+		TagManager& getTagManager();
 	};
 };
 
