@@ -155,6 +155,7 @@ CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/SystemManager.cpp
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/SystemManager.h
 
 CMakeFiles/entitysystem.dir/src/TagManager.cpp.o: ../../src/Entity.h
+CMakeFiles/entitysystem.dir/src/TagManager.cpp.o: ../../src/IdType.h
 CMakeFiles/entitysystem.dir/src/TagManager.cpp.o: ../../src/TagManager.cpp
 CMakeFiles/entitysystem.dir/src/TagManager.cpp.o: ../../src/TagManager.h
 

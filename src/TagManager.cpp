@@ -1,43 +1,50 @@
 #include "TagManager.h"
 #include "Entity.h"
-#include <vector>
 
 namespace jl
 {
+
 	void TagManager::tagEntity(Entity &entity, const std::string &name)
 	{
-		m_taggedEntities[name] = &entity;
-		
+		m_entityByTag[name] = &entity;
+		m_tagByEntity[entity.getId()] = name;
 	}
 
 	void TagManager::untagEntity(Entity &entity)
 	{
-		std::vector<std::string> associatedTags;
-		for(auto itr = m_taggedEntities.begin(); itr != m_taggedEntities.end(); itr++)
+		auto itr = m_tagByEntity.find(entity.getId());
+		if(itr != m_tagByEntity.end())
 		{
-			if(itr->second != nullptr)
-			{
-				if(itr->second->getId() == entity.getId())
-					associatedTags.push_back(itr->first);
-			}
+			m_entityByTag.erase(itr->second);
+			m_tagByEntity.erase(itr);
 		}
-		for(int i = 0; i < associatedTags.size(); i++)
-			m_taggedEntities.erase(associatedTags[i]);
 	}
 	void TagManager::untagEntity(const std::string &name)
 	{
-		auto itr = m_taggedEntities.find(name);
-		if(itr != m_taggedEntities.end())
-			m_taggedEntities.erase(itr);
+		auto itr = m_entityByTag.find(name);
+		if(itr != m_entityByTag.end())
+		{
+			m_entityByTag.erase(itr);
+			m_tagByEntity.erase(itr->second->getId());
+		}
 	}
 
 	bool TagManager::isTagged(const std::string &name) const
 	{
-		return m_taggedEntities.find(name) != m_taggedEntities.end();
+		return m_entityByTag.find(name) != m_entityByTag.end();
+	}
+	bool TagManager::isTagged(const Entity &entity) const
+	{
+		return m_tagByEntity.find(entity.getId()) != m_tagByEntity.end();
+	}
+	bool TagManager::isTaggedTo(const Entity &entity, const std::string &name) const
+	{
+		auto itr = m_tagByEntity.find(entity.getId());
+		return itr != m_tagByEntity.end() ? (itr->second == name) : false;
 	}
 
 	Entity& TagManager::getEntity(const std::string &name)
 	{
-		return *m_taggedEntities[name];
+		return *m_entityByTag[name];
 	}
 };

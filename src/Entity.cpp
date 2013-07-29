@@ -77,11 +77,7 @@ namespace jl
 		m_engine->getEntityManager().setEntityStatus(*this, status);
 	}
 
-	void Entity::removeTag(const std::string &tag)
-	{
-		m_engine->getTagManager().untagEntity(tag);
-	}
-	void Entity::removeTags()
+	void Entity::removeTag()
 	{
 		m_engine->getTagManager().untagEntity(*this);
 	}

@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"uno",
+				"unordered_map"
+			],
+			[
+				"m_ent",
+				"m_tagByEntity"
+			],
+			[
+				"m_tag",
+				"m_tagByEnitiy"
+			],
+			[
+				"m_",
+				"m_entityByTag"
+			],
+			[
+				"m_ta",
+				"m_tagByEnitiy"
+			],
+			[
+				"m_e",
+				"m_entities"
+			],
+			[
 				"Wi",
 				"WindowManager"
 			],
@@ -34,10 +58,6 @@
 			[
 				"erase",
 				"eraseItr"
-			],
-			[
-				"m_",
-				"m_activeEntities"
 			],
 			[
 				"Comp",
@@ -112,10 +132,6 @@
 				"Entity"
 			],
 			[
-				"m_e",
-				"m_entities"
-			],
-			[
 				"EN",
 				"EntityManager"
 			],
@@ -142,10 +158,6 @@
 			[
 				"en",
 				"entity"
-			],
-			[
-				"m_ent",
-				"m_entities"
 			],
 			[
 				"m_co",
@@ -316,6 +328,8 @@
 	},
 	"file_history":
 	[
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/CXX.includecache",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/bin/entitysystem_dev",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp",
 		"/usr/include/c++/4.7/bits/unordered_map.h",
@@ -375,6 +389,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"unordered_set",
+			"std::set",
+			"set",
+			"m_tagByEnitiy",
+			"IdType",
+			"IdRange",
+			"->",
+			";",
 			"TODO",
 			";",
 			"createWindow",
@@ -438,6 +460,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"IdType",
 			"m_entityRecycleQueue",
 			"m_engine"
 		],
@@ -493,16 +516,28 @@
 		"selected_items":
 		[
 			[
+				"engine",
+				"src/Engine.cpp"
+			],
+			[
+				"main",
+				"src/main.cpp"
+			],
+			[
+				"entityman",
+				"src/EntityManager.h"
+			],
+			[
+				"entity",
+				"src/Entity.h"
+			],
+			[
 				"enti",
 				"src/Entity.h"
 			],
 			[
 				"comp",
 				"src/ComponentMapper.h"
-			],
-			[
-				"main",
-				"src/main.cpp"
 			],
 			[
 				"co",

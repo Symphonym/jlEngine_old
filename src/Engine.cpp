@@ -18,6 +18,7 @@ namespace jl
 			while(removedEntity != nullptr)
 			{
 				// Remove entity elsewhere
+				m_tagManager.untagEntity(*removedEntity);
 
 				m_entityManager.issueEntityRecycle();
 				removedEntity = m_entityManager.nextEntityRecycle();

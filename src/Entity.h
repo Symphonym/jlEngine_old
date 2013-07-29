@@ -54,18 +54,16 @@ namespace jl
 		// Refreshes Entity amongst the Systems
 		void refresh();
 
-		// Set a custom string tag for an Entity, multiple tags per entity are supported.
+		// Set a custom string tag for an Entity by which it can be identified.
 		void setTag(const std::string &tag);
-		// Add the Entity to the Entity group by the specified name. The same
-		// entity can be located in multiple groups.
+		// Add the Entity to a group by the specified name. The Entity can be
+		// located in multiple groups at the same time.
 		void setGroup(const std::string &group);
 		// Whether or not the Entity should be processed by Systems
 		void setStatus(bool status);
 
-		// Removes single tag associated with Entity or all tags
-		// associated with Entity respectively.
-		void removeTag(const std::string &tag);
-		void removeTags();
+		// Untags the entity
+		void removeTag();
 		// Remove Entity from a single group or all groups it's
 		// associated with respectively.
 		void removeFromGroup(const std::string &group);

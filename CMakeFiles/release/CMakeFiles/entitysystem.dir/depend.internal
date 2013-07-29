@@ -156,6 +156,7 @@ CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
 CMakeFiles/entitysystem.dir/src/TagManager.cpp.o
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.cpp
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
 CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o
