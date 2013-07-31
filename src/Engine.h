@@ -5,6 +5,7 @@
 #include "SystemManager.h"
 #include "WindowManager.h"
 #include "TagManager.h"
+#include "GroupManager.h"
 
 namespace jl
 {
@@ -18,12 +19,14 @@ namespace jl
 		SystemManager m_systemManager;
 		WindowManager m_windowManager;
 		TagManager m_tagManager;
+		GroupManager m_groupManager;
 		// StateManager m_stateManager;
 		// SceneManager m_sceneManager;
 
 		// Whether the Engine is running or not
 		bool m_running;
-
+		double m_deltaTime;
+		std::size_t m_fps;
 		
 		void gameLoop();
 
@@ -43,6 +46,7 @@ namespace jl
 		SystemManager& getSystemManager();
 		WindowManager& getWindowManager();
 		TagManager& getTagManager();
+		GroupManager& getGroupManager();
 	};
 };
 

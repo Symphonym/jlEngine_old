@@ -4,8 +4,56 @@
 		"selected_items":
 		[
 			[
+				"m_gro",
+				"m_groupsByEntity"
+			],
+			[
+				"m_g",
+				"m_entitiesByGroup"
+			],
+			[
+				"grop",
+				"groupListItr"
+			],
+			[
+				"gro",
+				"groupListItr"
+			],
+			[
+				"remove",
+				"removeFromGroup"
+			],
+			[
+				"group",
+				"groupListItr"
+			],
+			[
+				"gr",
+				"groupListItr"
+			],
+			[
+				"m_",
+				"m_entitiesByGroup"
+			],
+			[
+				"enti",
+				"entityItr"
+			],
+			[
+				"grou",
+				"groupItr"
+			],
+			[
+				"m_gr",
+				"m_groupsByEntity"
+			],
+			[
+				"unor",
+				"unordered_set"
+			],
+			[
 				"uno",
-				"unordered_map"
+				"unordered_set"
 			],
 			[
 				"m_ent",
@@ -14,10 +62,6 @@
 			[
 				"m_tag",
 				"m_tagByEnitiy"
-			],
-			[
-				"m_",
-				"m_entityByTag"
 			],
 			[
 				"m_ta",
@@ -146,10 +190,6 @@
 			[
 				"Eni",
 				"EntityManager"
-			],
-			[
-				"remove",
-				"removeAllEntities"
 			],
 			[
 				"beg",
@@ -328,6 +368,7 @@
 	},
 	"file_history":
 	[
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Component.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/CXX.includecache",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/bin/entitysystem_dev",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h",
@@ -338,7 +379,6 @@
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Component.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeLists.txt",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ComponentMapper.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.cpp",
@@ -389,6 +429,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"TODO",
+			"tm",
+			"groupItr",
+			";",
 			"unordered_set",
 			"std::set",
 			"set",
@@ -517,7 +561,19 @@
 		[
 			[
 				"engine",
-				"src/Engine.cpp"
+				"src/Engine.h"
+			],
+			[
+				"groupma",
+				"src/GroupManager.h"
+			],
+			[
+				"tag",
+				"src/TagManager.cpp"
+			],
+			[
+				"group",
+				"src/GroupManager.h"
 			],
 			[
 				"main",

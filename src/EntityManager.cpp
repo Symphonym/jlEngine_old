@@ -102,7 +102,7 @@ namespace jl
 
 	Entity& EntityManager::getEntity(IdType id)
 	{
-		return *m_entities[id];
+		return *m_entities.at(id);
 	}
 
 	IdType EntityManager::getInactiveEntityCount() const

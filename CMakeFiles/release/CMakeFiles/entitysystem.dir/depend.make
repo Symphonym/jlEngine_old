@@ -40,6 +40,7 @@ CMakeFiles/entitysystem.dir/src/Engine.cpp.o: ../../linux/x64/include/SFML/Windo
 CMakeFiles/entitysystem.dir/src/Engine.cpp.o: ../../src/Engine.cpp
 CMakeFiles/entitysystem.dir/src/Engine.cpp.o: ../../src/Engine.h
 CMakeFiles/entitysystem.dir/src/Engine.cpp.o: ../../src/EntityManager.h
+CMakeFiles/entitysystem.dir/src/Engine.cpp.o: ../../src/GroupManager.h
 CMakeFiles/entitysystem.dir/src/Engine.cpp.o: ../../src/IdType.h
 CMakeFiles/entitysystem.dir/src/Engine.cpp.o: ../../src/SystemManager.h
 CMakeFiles/entitysystem.dir/src/Engine.cpp.o: ../../src/TagManager.h
@@ -86,6 +87,7 @@ CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/Engine.h
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/Entity.cpp
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/Entity.h
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/EntityManager.h
+CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/GroupManager.h
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/IdType.h
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/SystemManager.h
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/TagManager.h
@@ -139,10 +141,16 @@ CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/Entity.h
 CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/EntityManager.h
 CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/EntityProcessingSystem.cpp
 CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/EntityProcessingSystem.h
+CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/GroupManager.h
 CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/IdType.h
 CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/SystemManager.h
 CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/TagManager.h
 CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/WindowManager.h
+
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: ../../src/Entity.h
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: ../../src/GroupManager.cpp
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: ../../src/GroupManager.h
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: ../../src/IdType.h
 
 CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o: ../../src/Component.h
 CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o: ../../src/InputComponent.cpp
@@ -151,6 +159,7 @@ CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o: ../../src/InputComponent.h
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/Component.h
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/Entity.h
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/EntityProcessingSystem.h
+CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/IdType.h
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/SystemManager.cpp
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/SystemManager.h
 
@@ -265,6 +274,7 @@ CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../linux/x64/include/SFML/Window/
 CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../src/Engine.h
 CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../src/Entity.h
 CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../src/EntityManager.h
+CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../src/GroupManager.h
 CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../src/IdType.h
 CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../src/SystemManager.h
 CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../src/TagManager.h

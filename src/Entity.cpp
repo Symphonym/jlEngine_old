@@ -4,7 +4,7 @@
 
 namespace jl
 {
-	Entity::Entity(Engine *engine, int id) : 
+	Entity::Entity(Engine *engine, IdType id) : 
 		m_engine(engine),
 		m_id(id),
 		m_enabled(true)
@@ -70,7 +70,7 @@ namespace jl
 	}
 	void Entity::setGroup(const std::string &group)
 	{
-		// TODO
+		m_engine->getGroupManager().addToGroup(*this, group);
 	}
 	void Entity::setStatus(bool status)
 	{
@@ -83,11 +83,11 @@ namespace jl
 	}
 	void Entity::removeFromGroup(const std::string &group)
 	{
-		// TODO
+		m_engine->getGroupManager().removeFromGroup(*this, group);
 	}
 	void Entity::removeFromGroups()
 	{
-		// TODO
+		m_engine->getGroupManager().removeFromGroups(*this);
 	}
 
 	Component* Entity::getComponent(std::size_t hashCode)
@@ -108,7 +108,7 @@ namespace jl
 	{
 		return m_components.size();
 	}
-	int Entity::getId() const
+	IdType Entity::getId() const
 	{
 		return m_id;
 	}

@@ -251,6 +251,8 @@ SFML/Config.hpp
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.cpp
 Engine.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
+SFML/System.hpp
+-
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
 EntityManager.h
@@ -261,6 +263,8 @@ WindowManager.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h
 TagManager.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
+GroupManager.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
 vector
@@ -270,6 +274,16 @@ deque
 unordered_map
 -
 typeinfo
+-
+IdType.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
+unordered_map
+-
+unordered_set
+-
+string
 -
 IdType.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h

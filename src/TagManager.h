@@ -20,7 +20,7 @@ namespace jl
 		void tagEntity(Entity &entity, const std::string &name);
 
 		// Removes the tag associated with the specified Entity
-		void untagEntity(Entity &entity);
+		void untagEntity(const Entity &entity);
 		// Removes the specified tag
 		void untagEntity(const std::string &name);
 

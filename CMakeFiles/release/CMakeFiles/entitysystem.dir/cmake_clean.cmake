@@ -8,6 +8,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o"
   "CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o"
   "CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o"
+  "CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
   "../../bin/entitysystem.pdb"
   "../../bin/entitysystem"
 )

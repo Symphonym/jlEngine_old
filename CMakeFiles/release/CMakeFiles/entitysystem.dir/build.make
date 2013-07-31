@@ -256,6 +256,29 @@ CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o.provides: CMakeFiles/entitys
 
 CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o
 
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: ../../src/GroupManager.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp
+
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/entitysystem.dir/src/GroupManager.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp > CMakeFiles/entitysystem.dir/src/GroupManager.cpp.i
+
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/entitysystem.dir/src/GroupManager.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp -o CMakeFiles/entitysystem.dir/src/GroupManager.cpp.s
+
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.requires:
+.PHONY : CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.requires
+
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.provides: CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.provides.build
+.PHONY : CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.provides
+
+CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o
+
 # Object files for target entitysystem
 entitysystem_OBJECTS = \
 "CMakeFiles/entitysystem.dir/src/Engine.cpp.o" \
@@ -266,7 +289,8 @@ entitysystem_OBJECTS = \
 "CMakeFiles/entitysystem.dir/src/Entity.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o" \
-"CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o"
+"CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o" \
+"CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
 
 # External object files for target entitysystem
 entitysystem_EXTERNAL_OBJECTS =
@@ -280,6 +304,7 @@ entitysystem_EXTERNAL_OBJECTS =
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o
+../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/build.make
 ../../bin/entitysystem: ../../linux/x64/lib/libsfml-graphics.so
 ../../bin/entitysystem: ../../linux/x64/lib/libsfml-audio.so
@@ -303,6 +328,7 @@ CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/Entity.cpp
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o.requires
+CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.requires
 .PHONY : CMakeFiles/entitysystem.dir/requires
 
 CMakeFiles/entitysystem.dir/clean:

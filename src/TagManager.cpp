@@ -6,11 +6,13 @@ namespace jl
 
 	void TagManager::tagEntity(Entity &entity, const std::string &name)
 	{
+		untagEntity(name);
+
 		m_entityByTag[name] = &entity;
 		m_tagByEntity[entity.getId()] = name;
 	}
 
-	void TagManager::untagEntity(Entity &entity)
+	void TagManager::untagEntity(const Entity &entity)
 	{
 		auto itr = m_tagByEntity.find(entity.getId());
 		if(itr != m_tagByEntity.end())
@@ -45,6 +47,6 @@ namespace jl
 
 	Entity& TagManager::getEntity(const std::string &name)
 	{
-		return *m_entityByTag[name];
+		return *m_entityByTag.at(name);
 	}
 };

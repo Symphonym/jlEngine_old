@@ -207,6 +207,30 @@ src/EntityProcessingSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.s
 .PHONY : src/EntityProcessingSystem.cpp.s
 
+src/GroupManager.o: src/GroupManager.cpp.o
+.PHONY : src/GroupManager.o
+
+# target to build an object file
+src/GroupManager.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o
+.PHONY : src/GroupManager.cpp.o
+
+src/GroupManager.i: src/GroupManager.cpp.i
+.PHONY : src/GroupManager.i
+
+# target to preprocess a source file
+src/GroupManager.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/GroupManager.cpp.i
+.PHONY : src/GroupManager.cpp.i
+
+src/GroupManager.s: src/GroupManager.cpp.s
+.PHONY : src/GroupManager.s
+
+# target to generate assembly for a file
+src/GroupManager.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/GroupManager.cpp.s
+.PHONY : src/GroupManager.cpp.s
+
 src/InputComponent.o: src/InputComponent.cpp.o
 .PHONY : src/InputComponent.o
 
@@ -348,6 +372,9 @@ help:
 	@echo "... src/EntityProcessingSystem.o"
 	@echo "... src/EntityProcessingSystem.i"
 	@echo "... src/EntityProcessingSystem.s"
+	@echo "... src/GroupManager.o"
+	@echo "... src/GroupManager.i"
+	@echo "... src/GroupManager.s"
 	@echo "... src/InputComponent.o"
 	@echo "... src/InputComponent.i"
 	@echo "... src/InputComponent.s"

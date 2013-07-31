@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <string>
 #include <typeinfo>
+#include "IdType.h"
 
 namespace jl
 {
@@ -17,7 +18,7 @@ namespace jl
 
 		ComponentBag m_components;
 		Engine *m_engine;
-		int m_id;
+		IdType m_id;
 		bool m_enabled;
 
 		friend class EntityManager;
@@ -28,7 +29,7 @@ namespace jl
 
 		// Make constructor private so that only the EntityManager
 		// can create an Entity.
-		explicit Entity(Engine *engine, int id);
+		explicit Entity(Engine *engine, IdType id);
 	public:
 
 		// Ensure that the Entity's Components are deallocated in dtor
@@ -85,7 +86,7 @@ namespace jl
 
 		bool isEnabled() const;
 		std::size_t getComponentCount() const;
-		int getId() const;
+		IdType getId() const;
 	};
 };
 
