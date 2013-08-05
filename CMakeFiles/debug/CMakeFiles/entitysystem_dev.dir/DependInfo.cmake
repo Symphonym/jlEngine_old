@@ -7,9 +7,11 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/Engine.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/Entity.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/EntityManager.cpp.o"
-  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/EntityProcessingSystem.cpp.o"
-  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/InputComponent.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/InputComponent.cpp.o"
+  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/GroupManager.cpp.o"
+  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/System.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/SystemManager.cpp.o"
+  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/TagManager.cpp.o"
+  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/WindowManager.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/main.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/src/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
@@ -20,6 +22,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "../../linux/x64/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

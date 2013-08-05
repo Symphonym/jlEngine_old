@@ -183,53 +183,53 @@ src/EntityManager.cpp.s:
 	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/EntityManager.cpp.s
 .PHONY : src/EntityManager.cpp.s
 
-src/EntityProcessingSystem.o: src/EntityProcessingSystem.cpp.o
-.PHONY : src/EntityProcessingSystem.o
+src/GroupManager.o: src/GroupManager.cpp.o
+.PHONY : src/GroupManager.o
 
 # target to build an object file
-src/EntityProcessingSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/EntityProcessingSystem.cpp.o
-.PHONY : src/EntityProcessingSystem.cpp.o
+src/GroupManager.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/GroupManager.cpp.o
+.PHONY : src/GroupManager.cpp.o
 
-src/EntityProcessingSystem.i: src/EntityProcessingSystem.cpp.i
-.PHONY : src/EntityProcessingSystem.i
+src/GroupManager.i: src/GroupManager.cpp.i
+.PHONY : src/GroupManager.i
 
 # target to preprocess a source file
-src/EntityProcessingSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/EntityProcessingSystem.cpp.i
-.PHONY : src/EntityProcessingSystem.cpp.i
+src/GroupManager.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/GroupManager.cpp.i
+.PHONY : src/GroupManager.cpp.i
 
-src/EntityProcessingSystem.s: src/EntityProcessingSystem.cpp.s
-.PHONY : src/EntityProcessingSystem.s
+src/GroupManager.s: src/GroupManager.cpp.s
+.PHONY : src/GroupManager.s
 
 # target to generate assembly for a file
-src/EntityProcessingSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/EntityProcessingSystem.cpp.s
-.PHONY : src/EntityProcessingSystem.cpp.s
+src/GroupManager.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/GroupManager.cpp.s
+.PHONY : src/GroupManager.cpp.s
 
-src/InputComponent.o: src/InputComponent.cpp.o
-.PHONY : src/InputComponent.o
+src/System.o: src/System.cpp.o
+.PHONY : src/System.o
 
 # target to build an object file
-src/InputComponent.cpp.o:
-	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/InputComponent.cpp.o
-.PHONY : src/InputComponent.cpp.o
+src/System.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/System.cpp.o
+.PHONY : src/System.cpp.o
 
-src/InputComponent.i: src/InputComponent.cpp.i
-.PHONY : src/InputComponent.i
+src/System.i: src/System.cpp.i
+.PHONY : src/System.i
 
 # target to preprocess a source file
-src/InputComponent.cpp.i:
-	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/InputComponent.cpp.i
-.PHONY : src/InputComponent.cpp.i
+src/System.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/System.cpp.i
+.PHONY : src/System.cpp.i
 
-src/InputComponent.s: src/InputComponent.cpp.s
-.PHONY : src/InputComponent.s
+src/System.s: src/System.cpp.s
+.PHONY : src/System.s
 
 # target to generate assembly for a file
-src/InputComponent.cpp.s:
-	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/InputComponent.cpp.s
-.PHONY : src/InputComponent.cpp.s
+src/System.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/System.cpp.s
+.PHONY : src/System.cpp.s
 
 src/SystemManager.o: src/SystemManager.cpp.o
 .PHONY : src/SystemManager.o
@@ -254,6 +254,54 @@ src/SystemManager.s: src/SystemManager.cpp.s
 src/SystemManager.cpp.s:
 	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/SystemManager.cpp.s
 .PHONY : src/SystemManager.cpp.s
+
+src/TagManager.o: src/TagManager.cpp.o
+.PHONY : src/TagManager.o
+
+# target to build an object file
+src/TagManager.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/TagManager.cpp.o
+.PHONY : src/TagManager.cpp.o
+
+src/TagManager.i: src/TagManager.cpp.i
+.PHONY : src/TagManager.i
+
+# target to preprocess a source file
+src/TagManager.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/TagManager.cpp.i
+.PHONY : src/TagManager.cpp.i
+
+src/TagManager.s: src/TagManager.cpp.s
+.PHONY : src/TagManager.s
+
+# target to generate assembly for a file
+src/TagManager.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/TagManager.cpp.s
+.PHONY : src/TagManager.cpp.s
+
+src/WindowManager.o: src/WindowManager.cpp.o
+.PHONY : src/WindowManager.o
+
+# target to build an object file
+src/WindowManager.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/WindowManager.cpp.o
+.PHONY : src/WindowManager.cpp.o
+
+src/WindowManager.i: src/WindowManager.cpp.i
+.PHONY : src/WindowManager.i
+
+# target to preprocess a source file
+src/WindowManager.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/WindowManager.cpp.i
+.PHONY : src/WindowManager.cpp.i
+
+src/WindowManager.s: src/WindowManager.cpp.s
+.PHONY : src/WindowManager.s
+
+# target to generate assembly for a file
+src/WindowManager.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem_dev.dir/build.make CMakeFiles/entitysystem_dev.dir/src/WindowManager.cpp.s
+.PHONY : src/WindowManager.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -297,15 +345,21 @@ help:
 	@echo "... src/EntityManager.o"
 	@echo "... src/EntityManager.i"
 	@echo "... src/EntityManager.s"
-	@echo "... src/EntityProcessingSystem.o"
-	@echo "... src/EntityProcessingSystem.i"
-	@echo "... src/EntityProcessingSystem.s"
-	@echo "... src/InputComponent.o"
-	@echo "... src/InputComponent.i"
-	@echo "... src/InputComponent.s"
+	@echo "... src/GroupManager.o"
+	@echo "... src/GroupManager.i"
+	@echo "... src/GroupManager.s"
+	@echo "... src/System.o"
+	@echo "... src/System.i"
+	@echo "... src/System.s"
 	@echo "... src/SystemManager.o"
 	@echo "... src/SystemManager.i"
 	@echo "... src/SystemManager.s"
+	@echo "... src/TagManager.o"
+	@echo "... src/TagManager.i"
+	@echo "... src/TagManager.s"
+	@echo "... src/WindowManager.o"
+	@echo "... src/WindowManager.i"
+	@echo "... src/WindowManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

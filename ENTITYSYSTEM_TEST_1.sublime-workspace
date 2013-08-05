@@ -376,6 +376,8 @@
 	},
 	"file_history":
 	[
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TypeIdRetriever.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TypeIdRetriever.h",
 		"/usr/include/c++/4.7/bits/unique_ptr.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h",
@@ -444,6 +446,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"const std::type_info",
+			"hashCode",
+			"TypeIdRetriever",
 			"n",
 			"Game",
 			"Engine",

@@ -2,7 +2,6 @@
 #include "Component.h"
 #include "Engine.h"
 #include "Entity.h"
-#include <bitset>
 
 namespace jl
 {
@@ -16,21 +15,21 @@ namespace jl
 
 	void System::addTargetComponent(Component *component)
 	{
-		m_targetComponents.insert(typeid(*component).hash_code());
+		m_targetComponents.insert(typeid(*component));
 	}
-	void System::removeTargetComponent(std::size_t hashCode)
+	void System::removeTargetComponent(const std::type_index &typeindex)
 	{
-		auto itr = m_targetComponents.find(hashCode);
+		auto itr = m_targetComponents.find(typeindex);
 		if(itr != m_targetComponents.end())
 			m_targetComponents.erase(itr);
 	}
 	void System::removeTargetComponent(Component *component)
 	{
-		removeTargetComponent(typeid(*component).hash_code());
+		removeTargetComponent(typeid(*component));
 	}	
 	bool System::hasTargetComponent(Component *component) const
 	{
-		return m_targetComponents.find(typeid(*component).hash_code()) != m_targetComponents.end();
+		return m_targetComponents.find(typeid(*component)) != m_targetComponents.end();
 	}
 
 	void System::refreshEntity(Entity &entity)

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bashitr
 
 # Path obtaining command may vary on platforms
 START_DIR=$(pwd)

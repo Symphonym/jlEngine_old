@@ -38,21 +38,21 @@ int main(int argc, const char *args[])
 	//window.setPosition(sf::Vector2i(200, 100));
 
 	jl::SystemManager& sm = engine.getSystemManager();
-	//sm.addSystem(new ColliderSystem());
+	sm.addSystem(new ColliderSystem());
 
-	//ColliderSystem* sys = sm.getSystem<ColliderSystem>();
-	//std::cout << "Active entities: " << sys->getActiveEntityCount() << std::endl;
+	ColliderSystem* sys = sm.getSystem<ColliderSystem>();
+	std::cout << "Active entities: " << sys->getActiveEntityCount() << std::endl;
 
 	jl::EntityManager& em = engine.getEntityManager();
-	//jl::Entity& en1 = em.createEntity();
-	/*en1.addComponent(new CollidableComponent());
+	jl::Entity& en1 = em.createEntity();
+	en1.addComponent(new CollidableComponent());
 	en1.addComponent(new PositionComponent());
 
 	std::cout << "Active entities: " << sys->getActiveEntityCount() << std::endl;
 
 	en1.removeComponent<CollidableComponent>();
 	std::cout << "Active entities: " << sys->getActiveEntityCount() << std::endl;
-*/
+
 /*	jl::GroupManager& gm = engine.getGroupManager();
 	std::cout << "en1 in group=" << gm.isInGroup(en1, "actors") << std::endl;
 	en1.setGroup("actors");

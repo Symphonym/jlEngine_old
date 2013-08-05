@@ -19,19 +19,19 @@ namespace jl
 
 	void Entity::addComponent(Component *component)
 	{
-		std::size_t hashCode = typeid(*component).hash_code();
+		const std::type_info &typeinfo = typeid(*component);
 
 		// Overwrite existing component, unless it's the one we're trying to add
-		if(component != getComponent(hashCode))
-			removeComponent(hashCode);
+		if(component != getComponent(typeinfo))
+			removeComponent(typeinfo);
 
 		// Move assignment operator is invoked, so no need for us to move
-		m_components[hashCode] = ComponentPtr(component);
+		m_components[typeinfo] = ComponentPtr(component);
 		refresh();
 	}
-	void Entity::removeComponent(std::size_t hashCode)
+	void Entity::removeComponent(const std::type_index &typeindex)
 	{
-		auto itr = m_components.find(hashCode);
+		auto itr = m_components.find(typeindex);
 		if(itr != m_components.end())
 		{
 			m_components.erase(itr);
@@ -40,7 +40,7 @@ namespace jl
 	}
 	void Entity::removeComponent(Component *component)
 	{
-		removeComponent(typeid(*component).hash_code());
+		removeComponent(typeid(*component));
 	}
 	void Entity::recycle()
 	{
@@ -82,9 +82,9 @@ namespace jl
 		m_engine->getGroupManager().removeFromGroups(*this);
 	}
 
-	Component* Entity::getComponent(std::size_t hashCode)
+	Component* Entity::getComponent(const std::type_index &typeindex)
 	{
-		auto itr = m_components.find(hashCode);
+		auto itr = m_components.find(typeindex);
 		return itr != m_components.end() ? itr->second.get() : nullptr;
 	}
 

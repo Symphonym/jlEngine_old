@@ -3,7 +3,7 @@
 
 #include <unordered_set>
 #include <unordered_map>
-#include <typeinfo>
+#include <typeindex>
 #include <string>
 
 namespace jl
@@ -17,11 +17,11 @@ namespace jl
 
 		friend class SystemManager;
 
-		std::unordered_set<std::size_t> m_targetComponents; // Components the System operates on
+		std::unordered_set<std::type_index> m_targetComponents; // Components the System operates on
 		std::unordered_map<int, Entity*> m_activeEntities; // Entities being processed
 		bool m_enabled;
 
-		void removeTargetComponent(std::size_t hashCode);
+		void removeTargetComponent(const std::type_index &typeindex);
 
 	protected:
 		System();
@@ -34,18 +34,18 @@ namespace jl
 		void addTargetComponent(Component *component);
 		template<typename T> void addTargetComponent()
 		{
-			m_targetComponents.insert(typeid(T).hash_code());
+			m_targetComponents.insert(typeid(T));
 		};
 		void removeTargetComponent(Component *component);
 		template <typename T> void removeTargetComponent()
 		{
-			removeTargetComponent(typeid(T).hash_code());
+			removeTargetComponent(typeid(T));
 		};
 		
 		bool hasTargetComponent(Component *component) const;
 		template<typename T> bool hasTargetComponent() const
 		{
-			return m_targetComponents.find(typeid(T).hash_code()) != m_targetComponents.end();
+			return m_targetComponents.find(typeid(T)) != m_targetComponents.end();
 		};
 
 		void refreshEntity(Entity &entity);

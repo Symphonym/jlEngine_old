@@ -30,10 +30,14 @@ namespace jl
 		if(!m_removedAndAvailable.empty())
 			m_removedAndAvailable.pop_back();
 
+		// So we have something to return, seeing how the Entity gets
+		// moved before we reach the return statement.
+		Entity *entityPtr = entity.get();
+
 		entity->setStatus(true);
 		m_entities[entity->getId()] = std::move(entity);
 
-		return *entity;
+		return *entityPtr;
 	}
 
 	Entity* EntityManager::nextEntityRecycle()

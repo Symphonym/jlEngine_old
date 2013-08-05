@@ -3,7 +3,7 @@
 
 #include <unordered_map>
 #include <string>
-#include <typeinfo>
+#include <typeindex>
 #include <memory>
 #include "IdType.h"
 
@@ -16,7 +16,7 @@ namespace jl
 	private:
 
 		typedef std::unique_ptr<Component> ComponentPtr;
-		typedef std::unordered_map<std::size_t, ComponentPtr> ComponentBag;
+		typedef std::unordered_map<std::type_index, ComponentPtr> ComponentBag;
 
 		ComponentBag m_components;
 		Engine *m_engine;
@@ -44,9 +44,9 @@ namespace jl
 		void removeComponent(Component *component);
 		template<typename T> void removeComponent()
 		{
-			removeComponent(typeid(T).hash_code());
+			removeComponent(typeid(T));
 		};
-		void removeComponent(std::size_t hashCode); // Used almost exclusively internally
+		void removeComponent(const std::type_index &typeindex); // Used almost exclusively internally
 
 		// Removes all components and sets the Entity's state to disabled, as
 		// all functionality has been removed from it.
@@ -77,10 +77,10 @@ namespace jl
 		// does not exist within the Entity, nullptr is returned.
 		template<typename T> T* getComponent()
 		{
-			Component *component = getComponent(typeid(T).hash_code());
+			Component *component = getComponent(typeid(T));
 			return component != nullptr ? static_cast<T*>(component) : nullptr;
 		};
-		Component* getComponent(std::size_t hashCode); // Used almost exclusively internally
+		Component* getComponent(const std::type_index &typeindex); // Used almost exclusively internally
 
 
 		// Returns a read-only version of the component bag
