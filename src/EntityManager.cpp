@@ -1,6 +1,7 @@
 #include "EntityManager.h"
 #include "Entity.h"
 #include "Component.h"
+#include <typeinfo>
 
 namespace jl
 {
@@ -13,19 +14,6 @@ namespace jl
 	}
 	EntityManager::~EntityManager()
 	{
-		for(auto itr = m_entities.begin(); itr != m_entities.end(); itr++)
-			m_removedAndAvailable.push_back(itr->second);
-
-		for(int i = 0; i < m_removedAndAvailable.size(); i++)
-		{
-			Entity* entity = m_removedAndAvailable[i];
-			if(entity != nullptr)
-			{
-				delete entity;
-				entity = nullptr;
-			}
-		}
-
 		m_removedAndAvailable.clear();
 		m_entities.clear();
 		m_entityRecycleQueue.clear();
@@ -33,24 +21,24 @@ namespace jl
 
 	Entity& EntityManager::createEntity()
 	{
-		Entity* entity = !m_removedAndAvailable.empty() ? 
-			m_removedAndAvailable.back() : 
-			new Entity(m_engine, m_uniqueEntityId++);
+		// Retrieve recycled Entity or allocate a new one if there's no
+		// recycled entities available
+		EntityPtr entity = !m_removedAndAvailable.empty() ? 
+			std::move(m_removedAndAvailable.back()) : 
+			EntityPtr(new Entity(m_engine, m_uniqueEntityId++));
 
 		if(!m_removedAndAvailable.empty())
 			m_removedAndAvailable.pop_back();
 
-		m_entities[entity->getId()] = entity;
-		++m_activeEntityCount;
+		entity->setStatus(true);
+		m_entities[entity->getId()] = std::move(entity);
 
 		return *entity;
 	}
 
-
-
 	Entity* EntityManager::nextEntityRecycle()
 	{
-		return !m_entityRecycleQueue.empty() ? m_entities[m_entityRecycleQueue.front()] : nullptr;
+		return !m_entityRecycleQueue.empty() ? m_entities[m_entityRecycleQueue.front()].get() : nullptr;
 	}
 	bool EntityManager::issueEntityRecycle()
 	{
@@ -58,20 +46,18 @@ namespace jl
 		if(m_entityRecycleQueue.empty())
 			return false;
 
-		Entity& entity = getEntity(m_entityRecycleQueue.front());
+		EntityPtr& entity = m_entities.at(m_entityRecycleQueue.front());
 
-		if(entity.isEnabled())
-			--m_activeEntityCount;
-		
-		stripEntity(entity.getId());
-		entity.refresh();
+		stripEntity(m_entityRecycleQueue.front());
+		entity->setStatus(false);
+		entity->refresh();
 
 		// Move Entity to recycle stack
-		m_removedAndAvailable.push_back(&entity);
+		m_removedAndAvailable.push_back(std::move(entity));
 
-		m_entities.erase(entity.getId());
-
+		m_entities.erase(m_entityRecycleQueue.front());
 		m_entityRecycleQueue.pop_front();
+
 		return true;
 	}
 
@@ -85,14 +71,16 @@ namespace jl
 	}
 	void EntityManager::recycleAllEntities()
 	{
-		for(auto itr = m_entities.begin(); itr != m_entities.end(); itr++)
-			recycleEntity(itr->first);
+		for(auto& itr : m_entities)
+			recycleEntity(itr.first);
 	}
 
-	void EntityManager::setEntityStatus(Entity &entity, bool enabled)
+	void EntityManager::setEntityStatus(Entity &entity, bool status)
 	{
-		entity.m_enabled = enabled;
-		m_activeEntityCount += enabled ? 1 : -1;
+		if(entity.isEnabled() != status)
+			m_activeEntityCount += status ? 1 : -1;
+
+		entity.m_enabled = status;
 	}
 
 	void EntityManager::stripEntity(IdType id)

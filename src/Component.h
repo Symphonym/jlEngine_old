@@ -1,5 +1,5 @@
-#ifndef COMPONENT_H
-#define COMPONENT_H
+#ifndef JL_COMPONENT_H
+#define JL_COMPONENT_H
 
 #include <string>
 

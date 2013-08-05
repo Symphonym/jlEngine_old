@@ -1,5 +1,5 @@
-#ifndef TAGMANAGER_H
-#define TAGMANAGER_H
+#ifndef JL_TAGMANAGER_H
+#define JL_TAGMANAGER_H
 
 #include <unordered_map>
 #include <string>

@@ -1,5 +1,5 @@
-#ifndef ENGINE_H
-#define ENGINE_H
+#ifndef JL_ENGINE_H
+#define JL_ENGINE_H
 
 #include "EntityManager.h"
 #include "SystemManager.h"
@@ -11,6 +11,8 @@ namespace jl
 {
 	class Entity;
 	class EntityProcessingSystem;
+
+	// Starting point of the Engine, the gameloop runs from here.
 	class Engine
 	{
 	private:

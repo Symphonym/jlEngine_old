@@ -1,9 +1,10 @@
-#ifndef ENTITY_H
-#define ENTITY_H
+#ifndef JL_ENTITY_H
+#define JL_ENTITY_H
 
 #include <unordered_map>
 #include <string>
 #include <typeinfo>
+#include <memory>
 #include "IdType.h"
 
 namespace jl
@@ -14,7 +15,8 @@ namespace jl
 	{
 	private:
 
-		typedef std::unordered_map<std::size_t, jl::Component*> ComponentBag;
+		typedef std::unique_ptr<Component> ComponentPtr;
+		typedef std::unordered_map<std::size_t, ComponentPtr> ComponentBag;
 
 		ComponentBag m_components;
 		Engine *m_engine;

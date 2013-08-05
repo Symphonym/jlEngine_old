@@ -72,32 +72,9 @@ CMakeFiles/entitysystem.dir/src/Engine.cpp.o.provides: CMakeFiles/entitysystem.d
 
 CMakeFiles/entitysystem.dir/src/Engine.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/Engine.cpp.o
 
-CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: CMakeFiles/entitysystem.dir/flags.make
-CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o: ../../src/EntityProcessingSystem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp
-
-CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp > CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.i
-
-CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp -o CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.s
-
-CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o.requires:
-.PHONY : CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o.requires
-
-CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o.provides: CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o.requires
-	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o.provides.build
-.PHONY : CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o.provides
-
-CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o
-
 CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o: ../../src/EntityManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp
 
@@ -120,7 +97,7 @@ CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o.provides.build: CMakeFiles/e
 
 CMakeFiles/entitysystem.dir/src/TagManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/TagManager.cpp.o: ../../src/TagManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/TagManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/TagManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.cpp
 
@@ -143,7 +120,7 @@ CMakeFiles/entitysystem.dir/src/TagManager.cpp.o.provides.build: CMakeFiles/enti
 
 CMakeFiles/entitysystem.dir/src/main.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/main.cpp.o: ../../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/main.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/main.cpp
 
@@ -166,7 +143,7 @@ CMakeFiles/entitysystem.dir/src/main.cpp.o.provides.build: CMakeFiles/entitysyst
 
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o: ../../src/Entity.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/Entity.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/Entity.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp
 
@@ -186,6 +163,29 @@ CMakeFiles/entitysystem.dir/src/Entity.cpp.o.provides: CMakeFiles/entitysystem.d
 .PHONY : CMakeFiles/entitysystem.dir/src/Entity.cpp.o.provides
 
 CMakeFiles/entitysystem.dir/src/Entity.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/Entity.cpp.o
+
+CMakeFiles/entitysystem.dir/src/System.cpp.o: CMakeFiles/entitysystem.dir/flags.make
+CMakeFiles/entitysystem.dir/src/System.cpp.o: ../../src/System.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/System.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/System.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.cpp
+
+CMakeFiles/entitysystem.dir/src/System.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/entitysystem.dir/src/System.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.cpp > CMakeFiles/entitysystem.dir/src/System.cpp.i
+
+CMakeFiles/entitysystem.dir/src/System.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/entitysystem.dir/src/System.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.cpp -o CMakeFiles/entitysystem.dir/src/System.cpp.s
+
+CMakeFiles/entitysystem.dir/src/System.cpp.o.requires:
+.PHONY : CMakeFiles/entitysystem.dir/src/System.cpp.o.requires
+
+CMakeFiles/entitysystem.dir/src/System.cpp.o.provides: CMakeFiles/entitysystem.dir/src/System.cpp.o.requires
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/System.cpp.o.provides.build
+.PHONY : CMakeFiles/entitysystem.dir/src/System.cpp.o.provides
+
+CMakeFiles/entitysystem.dir/src/System.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/System.cpp.o
 
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/SystemManager.cpp
@@ -210,32 +210,9 @@ CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o.provides: CMakeFiles/entitys
 
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o
 
-CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o: CMakeFiles/entitysystem.dir/flags.make
-CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o: ../../src/InputComponent.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/InputComponent.cpp
-
-CMakeFiles/entitysystem.dir/src/InputComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/entitysystem.dir/src/InputComponent.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/InputComponent.cpp > CMakeFiles/entitysystem.dir/src/InputComponent.cpp.i
-
-CMakeFiles/entitysystem.dir/src/InputComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/entitysystem.dir/src/InputComponent.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/InputComponent.cpp -o CMakeFiles/entitysystem.dir/src/InputComponent.cpp.s
-
-CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.requires:
-.PHONY : CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.requires
-
-CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.provides: CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.requires
-	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.provides.build
-.PHONY : CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.provides
-
-CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o
-
 CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o: ../../src/WindowManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.cpp
 
@@ -258,7 +235,7 @@ CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o.provides.build: CMakeFiles/e
 
 CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: ../../src/GroupManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp
 
@@ -282,13 +259,12 @@ CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.provides.build: CMakeFiles/en
 # Object files for target entitysystem
 entitysystem_OBJECTS = \
 "CMakeFiles/entitysystem.dir/src/Engine.cpp.o" \
-"CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/TagManager.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/main.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/Entity.cpp.o" \
+"CMakeFiles/entitysystem.dir/src/System.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o" \
-"CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
 
@@ -296,13 +272,12 @@ entitysystem_OBJECTS = \
 entitysystem_EXTERNAL_OBJECTS =
 
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/Engine.cpp.o
-../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/TagManager.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/main.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/Entity.cpp.o
+../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/System.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o
-../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/build.make
@@ -320,13 +295,12 @@ CMakeFiles/entitysystem.dir/build: ../../bin/entitysystem
 .PHONY : CMakeFiles/entitysystem.dir/build
 
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/Engine.cpp.o.requires
-CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/TagManager.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/main.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/Entity.cpp.o.requires
+CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/System.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o.requires
-CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.requires
 .PHONY : CMakeFiles/entitysystem.dir/requires

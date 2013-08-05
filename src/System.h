@@ -1,5 +1,5 @@
-#ifndef ENTITYPROCESSINGSYSTEM_H
-#define ENTITYPROCESSINGSYSTEM_H
+#ifndef JL_SYSTEM_H
+#define JL_SYSTEM_H
 
 #include <unordered_set>
 #include <unordered_map>
@@ -11,7 +11,7 @@ namespace jl
 	class Component;
 	class Engine;
 	class Entity;
-	class EntityProcessingSystem
+	class System
 	{
 	private:
 
@@ -24,8 +24,8 @@ namespace jl
 		void removeTargetComponent(std::size_t hashCode);
 
 	protected:
-		EntityProcessingSystem();
-		virtual ~EntityProcessingSystem(){};
+		System();
+		virtual ~System(){};
 
 		Engine *m_engine;
 
@@ -64,6 +64,10 @@ namespace jl
 		virtual void processEntity(Entity &entity) = 0;
 
 		bool isEnabled() const;
+
+		// Returns the number of Entities currently being
+		// processed by the System
+		std::size_t getActiveEntityCount() const;
 
 	};
 };

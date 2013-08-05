@@ -1,5 +1,5 @@
-#ifndef SCREENMANAGER_H
-#define SCREENMANAGER_H
+#ifndef JL_SCREENMANAGER_H
+#define JL_SCREENMANAGER_H
 
 #include <vector>
 
@@ -30,6 +30,18 @@ namespace jl
 		*/
 
 		std::vector<Screen*> m_stack;
+
+	public:
+
+		// Updates the screen at the top of the stack, and screens below depending
+		// on whether or not the screens above are transparent.
+		void updateScreens();
+		// Draws the screen at the top of the stack, and screens below depending
+		// on whether or not the screens above are transparent.
+		void drawScreens();
+
+		void pushScreen(Screen *screen);
+		void popScreen();
 
 
 	};

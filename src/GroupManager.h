@@ -1,5 +1,5 @@
-#ifndef GROUPMANAGER_H
-#define GROUPMANAGER_H
+#ifndef JL_GROUPMANAGER_H
+#define JL_GROUPMANAGER_H
 
 #include <unordered_map>
 #include <unordered_set>
@@ -13,8 +13,11 @@ namespace jl
 	{
 	private:
 
-		std::unordered_map<std::string, std::unordered_map<IdType, Entity*> > m_entitiesByGroup;
-		std::unordered_map<IdType, std::unordered_set<std::string> > m_groupsByEntity;
+		typedef std::unordered_map<IdType, Entity*> Group;
+		typedef std::unordered_set<std::string> GroupList;
+
+		std::unordered_map<std::string, Group> m_entitiesByGroup;
+		std::unordered_map<IdType, GroupList> m_groupsByEntity;
 
 		// Empty list of groups that is referenced when an Entity is located in zero(0) groups
 		const std::unordered_set<std::string> empty_grouplist;
@@ -33,8 +36,8 @@ namespace jl
 		bool isGroupExisting(const std::string &group) const;
 
 		// Returns all the groups that the Entity is located in
-		const std::unordered_set<std::string>& getGroupsOf(const Entity &entity) const;
-		std::unordered_map<IdType, Entity*>& getGroup(const std::string &name);
+		const GroupList& getGroupsOf(const Entity &entity) const;
+		Group& getGroup(const std::string &name);
 
 
 

@@ -10,6 +10,8 @@ namespace jl
 	}
 	void GroupManager::removeFromGroup(Entity &entity, const std::string &group)
 	{
+		// TODO Optimize this somehow
+
 
 		// Get list of groups that the Entity is in
 		auto groupListItr = m_groupsByEntity.find(entity.getId());
@@ -65,12 +67,12 @@ namespace jl
 	}
 
 
-	const std::unordered_set<std::string>& GroupManager::getGroupsOf(const Entity &entity) const
+	const GroupManager::GroupList& GroupManager::getGroupsOf(const Entity &entity) const
 	{
 		auto itr = m_groupsByEntity.find(entity.getId());
 		return itr != m_groupsByEntity.end() ? itr->second : empty_grouplist;
 	}	
-	std::unordered_map<IdType, Entity*>& GroupManager::getGroup(const std::string &name)
+	GroupManager::Group& GroupManager::getGroup(const std::string &name)
 	{
 		return m_entitiesByGroup.at(name);
 	}

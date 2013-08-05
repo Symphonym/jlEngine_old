@@ -1,5 +1,5 @@
-#ifndef SYSTEMMANAGER_H
-#define SYSTEMMANAGER_H
+#ifndef JL_SYSTEMMANAGER_H
+#define JL_SYSTEMMANAGER_H
 
 #include <unordered_map>
 #include <typeinfo>
@@ -8,12 +8,12 @@ namespace jl
 {
 	class Engine;
 	class Entity;
-	class EntityProcessingSystem;
+	class System;
 	class SystemManager
 	{
 	private:
 
-		typedef std::unordered_map<std::size_t, EntityProcessingSystem*> SystemBag;
+		typedef std::unordered_map<std::size_t, System*> SystemBag;
 		int m_activeSystemCount;
 
 		SystemBag m_systems;
@@ -25,17 +25,18 @@ namespace jl
 		explicit SystemManager(Engine *engine);
 		~SystemManager();
 
-		void addSystem(EntityProcessingSystem *system);
-		void removeSystem(EntityProcessingSystem *system);
+		// TODO possibly return pointer to system to make it more user-friendly
+		void addSystem(System *system);
+		void removeSystem(System *system);
 		template<typename T> void removeSystem()
 		{
 			removeSystem(getSystem<T>());
 		};
 
-		void setSystemStatus(EntityProcessingSystem *system, bool status);
+		void setSystemStatus(System *system, bool status);
 		template<typename T> void setSystemStatus(bool status)
 		{
-			EntityProcessingSystem *system = getSystem<T>();
+			T *system = getSystem<T>();
 			if(system != nullptr)
 				setSystemStatus(system, status);
 		};
@@ -49,6 +50,7 @@ namespace jl
 			auto itr = m_systems.find(typeid(T).hash_code());
 			return itr != m_systems.end() ? static_cast<T*>(itr->second) : nullptr;
 		};
+		
 		const SystemBag getAllSystems() const;
 		std::size_t getTotalSystemCount() const;
 		std::size_t getActiveSystemCount() const;

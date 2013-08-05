@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"COm",
+				"ComponentPtr"
+			],
+			[
+				"Comp",
+				"ComponentPtr"
+			],
+			[
+				"m_ent",
+				"m_entityRecycleQueue"
+			],
+			[
+				"m_e",
+				"m_enabled"
+			],
+			[
+				"uno",
+				"unordered_map"
+			],
+			[
+				"m_en",
+				"m_entities"
+			],
+			[
+				"Coll",
+				"CollidableComponent"
+			],
+			[
 				"m_gro",
 				"m_groupsByEntity"
 			],
@@ -52,24 +80,12 @@
 				"unordered_set"
 			],
 			[
-				"uno",
-				"unordered_set"
-			],
-			[
-				"m_ent",
-				"m_tagByEntity"
-			],
-			[
 				"m_tag",
 				"m_tagByEnitiy"
 			],
 			[
 				"m_ta",
 				"m_tagByEnitiy"
-			],
-			[
-				"m_e",
-				"m_entities"
 			],
 			[
 				"Wi",
@@ -104,10 +120,6 @@
 				"eraseItr"
 			],
 			[
-				"Comp",
-				"Component"
-			],
-			[
 				"Enti",
 				"EntityProcessingSystem"
 			],
@@ -118,10 +130,6 @@
 			[
 				"bge",
 				"begin"
-			],
-			[
-				"m_en",
-				"m_enabled"
 			],
 			[
 				"sy",
@@ -368,24 +376,31 @@
 	},
 	"file_history":
 	[
+		"/usr/include/c++/4.7/bits/unique_ptr.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ComponentMapper.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Component.h",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp",
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/debug/CMakeFiles/entitysystem_dev.dir/CXX.includecache",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/bin/entitysystem_dev",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp",
 		"/usr/include/c++/4.7/bits/unordered_map.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/InputComponent.h",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeLists.txt",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ComponentMapper.h",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.cpp",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.h",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.cpp",
-		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/main.cpp",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/In file included from /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/In file included from /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityProcessingSystem.cpp",
@@ -429,6 +444,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"n",
+			"Game",
+			"Engine",
+			"EntityProcessingSystem",
+			"TODO",
+			"= default",
 			"TODO",
 			"tm",
 			"groupItr",
@@ -504,6 +525,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Engine",
+			"Game",
+			"System",
 			"IdType",
 			"m_entityRecycleQueue",
 			"m_engine"
@@ -559,6 +583,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"scren",
+				"src/Screen.h"
+			],
 			[
 				"engine",
 				"src/Engine.h"

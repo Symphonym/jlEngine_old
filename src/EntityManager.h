@@ -1,10 +1,10 @@
-#ifndef ENTITYMANAGER_H
-#define ENTITYMANAGER_H
+#ifndef JL_ENTITYMANAGER_H
+#define JL_ENTITYMANAGER_H
 
 #include <vector>
 #include <deque>
 #include <unordered_map>
-#include <typeinfo>
+#include <memory>
 #include "IdType.h"
 
 
@@ -17,19 +17,17 @@ namespace jl
 	{
 	private:
 
-		// Simplify type used for Unique ID so it changed easily be
-		// changed if neccesary.
-		//typedef int IdType;
+		typedef std::unique_ptr<Entity> EntityPtr;
 
 		IdType m_uniqueEntityId;
 		IdType m_activeEntityCount; // Entities being actively processed
 
-		// Queue for entities awaiting recycling (Allowing Entities to delete themselves)
+		// Queue for entities awaiting recycling (Allowing Entities to recycle themselves)
 		std::deque<IdType> m_entityRecycleQueue;
 
-		std::unordered_map<IdType, Entity*> m_entities;
+		std::unordered_map<IdType, EntityPtr> m_entities;
 		// Entities available for recycling.
-		std::vector<Entity*> m_removedAndAvailable;
+		std::vector<EntityPtr> m_removedAndAvailable;
 
 		Engine *m_engine;
 
@@ -64,6 +62,8 @@ namespace jl
 		// Strips entity of its components
 		void stripEntity(IdType id);
 
+		// Whether or not the Entity active
+		bool isActive(IdType id);
 		Entity& getEntity(IdType id);
 
 		IdType getInactiveEntityCount() const;

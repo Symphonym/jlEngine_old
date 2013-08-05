@@ -1,5 +1,5 @@
-#ifndef COMPONENTMAPPER_H
-#define COMPONENTMAPPER_H
+#ifndef JL_COMPONENTMAPPER_H
+#define JL_COMPONENTMAPPER_H
 
 #include <string>
 #include "Entity.h"

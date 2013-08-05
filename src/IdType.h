@@ -1,5 +1,5 @@
-#ifndef IDTYPE_H
-#define IDTYPE_H
+#ifndef JL_IDTYPE_H
+#define JL_IDTYPE_H
 
 namespace jl
 {

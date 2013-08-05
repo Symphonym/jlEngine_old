@@ -1,12 +1,11 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/entitysystem.dir/src/Engine.cpp.o"
-  "CMakeFiles/entitysystem.dir/src/EntityProcessingSystem.cpp.o"
   "CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o"
   "CMakeFiles/entitysystem.dir/src/TagManager.cpp.o"
   "CMakeFiles/entitysystem.dir/src/main.cpp.o"
   "CMakeFiles/entitysystem.dir/src/Entity.cpp.o"
+  "CMakeFiles/entitysystem.dir/src/System.cpp.o"
   "CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o"
-  "CMakeFiles/entitysystem.dir/src/InputComponent.cpp.o"
   "CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o"
   "CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
   "../../bin/entitysystem.pdb"

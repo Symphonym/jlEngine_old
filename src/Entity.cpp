@@ -25,7 +25,8 @@ namespace jl
 		if(component != getComponent(hashCode))
 			removeComponent(hashCode);
 
-		m_components[hashCode] = component;
+		// Move assignment operator is invoked, so no need for us to move
+		m_components[hashCode] = ComponentPtr(component);
 		refresh();
 	}
 	void Entity::removeComponent(std::size_t hashCode)
@@ -33,10 +34,7 @@ namespace jl
 		auto itr = m_components.find(hashCode);
 		if(itr != m_components.end())
 		{
-			delete itr->second;
-			itr->second = nullptr;
 			m_components.erase(itr);
-
 			refresh();
 		}
 	}
@@ -54,14 +52,8 @@ namespace jl
 	}
 	void Entity::removeAllComponents()
 	{
-		for(auto itr = m_components.begin(); itr != m_components.end(); itr++)
-		{
-			delete itr->second;
-			itr->second = nullptr;
-		}
-		refresh();
-
 		m_components.clear();
+		refresh();
 	}
 
 	void Entity::setTag(const std::string &tag)
@@ -93,7 +85,7 @@ namespace jl
 	Component* Entity::getComponent(std::size_t hashCode)
 	{
 		auto itr = m_components.find(hashCode);
-		return itr != m_components.end() ? itr->second : nullptr;
+		return itr != m_components.end() ? itr->second.get() : nullptr;
 	}
 
 	const Entity::ComponentBag& Entity::getAllComponents() const

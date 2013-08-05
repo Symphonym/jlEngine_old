@@ -1,5 +1,5 @@
-#ifndef WINDOWMANAGER_H
-#define WINDOWMANAGER_H
+#ifndef JL_WINDOWMANAGER_H
+#define JL_WINDOWMANAGER_H
 
 #include <unordered_map>
 #include <string>

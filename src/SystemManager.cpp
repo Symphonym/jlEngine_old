@@ -1,7 +1,7 @@
 #include "SystemManager.h"
 #include "Component.h"
 #include "Entity.h"
-#include "EntityProcessingSystem.h"
+#include "System.h"
 #include <iostream>
 
 namespace jl
@@ -22,7 +22,7 @@ namespace jl
 		m_systems.clear();
 	}
 
-	void SystemManager::addSystem(EntityProcessingSystem *system)
+	void SystemManager::addSystem(System *system)
 	{
 		std::size_t hashCode = typeid(*system).hash_code();
 		if(system != m_systems[hashCode])
@@ -32,7 +32,7 @@ namespace jl
 		m_systems[hashCode] = system;
 
 	}
-	void SystemManager::removeSystem(EntityProcessingSystem *system)
+	void SystemManager::removeSystem(System *system)
 	{
 		auto itr = m_systems.find(typeid(*system).hash_code());
 		if(itr != m_systems.end())
@@ -42,7 +42,7 @@ namespace jl
 		}
 	}
 
-	void SystemManager::setSystemStatus(EntityProcessingSystem *system, bool status)
+	void SystemManager::setSystemStatus(System *system, bool status)
 	{
 		m_activeSystemCount += status ? 1 : -1;
 		system->m_enabled = status;

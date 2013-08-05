@@ -1,5 +1,5 @@
-#ifndef SCREEN_H
-#define SCREEN_H
+#ifndef JL_SCREEN_H
+#define JL_SCREEN_H
 
 namespace jl
 {
