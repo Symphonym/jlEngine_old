@@ -25,11 +25,12 @@ namespace jl
 
 	protected:
 		System();
-		virtual ~System(){};
 
 		Engine *m_engine;
 
 	public:
+
+		virtual ~System(){};
 
 		void addTargetComponent(Component *component);
 		template<typename T> void addTargetComponent()

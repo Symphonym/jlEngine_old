@@ -14,37 +14,31 @@ namespace jl
 	}
 	SystemManager::~SystemManager()
 	{
-		for(auto itr = m_systems.begin(); itr != m_systems.end(); itr++)
-		{
-			delete itr->second;
-			itr->second = nullptr;
-		}
 		m_systems.clear();
 	}
 
 	void SystemManager::addSystem(System *system)
 	{
-		std::size_t hashCode = typeid(*system).hash_code();
-		if(system != m_systems[hashCode])
+		const std::type_info &typeinfo = typeid(*system);
+		if(system != m_systems[typeinfo].get())
 			removeSystem(system);
 
 		system->m_engine = m_engine;
-		m_systems[hashCode] = system;
+		m_systems[typeinfo] = SystemPtr(system);
 
 	}
 	void SystemManager::removeSystem(System *system)
 	{
-		auto itr = m_systems.find(typeid(*system).hash_code());
+		auto itr = m_systems.find(typeid(*system));
 		if(itr != m_systems.end())
-		{
-			delete itr->second;
 			m_systems.erase(itr);
-		}
 	}
 
 	void SystemManager::setSystemStatus(System *system, bool status)
 	{
-		m_activeSystemCount += status ? 1 : -1;
+		if(system->isEnabled() != status)
+			m_activeSystemCount += status ? 1 : -1;
+
 		system->m_enabled = status;
 	}
 
@@ -55,7 +49,7 @@ namespace jl
 			sItr->second->refreshEntity(entity);
 	}
 
-	const SystemManager::SystemBag SystemManager::getAllSystems() const
+	const SystemManager::SystemBag& SystemManager::getAllSystems() const
 	{
 		return m_systems;
 	}

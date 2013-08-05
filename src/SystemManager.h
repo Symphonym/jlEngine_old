@@ -2,7 +2,8 @@
 #define JL_SYSTEMMANAGER_H
 
 #include <unordered_map>
-#include <typeinfo>
+#include <typeindex>
+#include <memory>
 
 namespace jl
 {
@@ -13,7 +14,8 @@ namespace jl
 	{
 	private:
 
-		typedef std::unordered_map<std::size_t, System*> SystemBag;
+		typedef std::unique_ptr<System> SystemPtr;
+		typedef std::unordered_map<std::type_index, SystemPtr> SystemBag;
 		int m_activeSystemCount;
 
 		SystemBag m_systems;
@@ -47,11 +49,11 @@ namespace jl
 
 		template<typename T> T* getSystem()
 		{
-			auto itr = m_systems.find(typeid(T).hash_code());
-			return itr != m_systems.end() ? static_cast<T*>(itr->second) : nullptr;
+			auto itr = m_systems.find(typeid(T));
+			return itr != m_systems.end() ? static_cast<T*>(itr->second.get()) : nullptr;
 		};
 		
-		const SystemBag getAllSystems() const;
+		const SystemBag& getAllSystems() const;
 		std::size_t getTotalSystemCount() const;
 		std::size_t getActiveSystemCount() const;
 		std::size_t getInactiveSystemCount() const;
