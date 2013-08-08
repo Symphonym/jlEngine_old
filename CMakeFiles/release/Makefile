@@ -207,6 +207,54 @@ src/GroupManager.cpp.s:
 	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/GroupManager.cpp.s
 .PHONY : src/GroupManager.cpp.s
 
+src/Screen.o: src/Screen.cpp.o
+.PHONY : src/Screen.o
+
+# target to build an object file
+src/Screen.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/Screen.cpp.o
+.PHONY : src/Screen.cpp.o
+
+src/Screen.i: src/Screen.cpp.i
+.PHONY : src/Screen.i
+
+# target to preprocess a source file
+src/Screen.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/Screen.cpp.i
+.PHONY : src/Screen.cpp.i
+
+src/Screen.s: src/Screen.cpp.s
+.PHONY : src/Screen.s
+
+# target to generate assembly for a file
+src/Screen.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/Screen.cpp.s
+.PHONY : src/Screen.cpp.s
+
+src/ScreenManager.o: src/ScreenManager.cpp.o
+.PHONY : src/ScreenManager.o
+
+# target to build an object file
+src/ScreenManager.cpp.o:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o
+.PHONY : src/ScreenManager.cpp.o
+
+src/ScreenManager.i: src/ScreenManager.cpp.i
+.PHONY : src/ScreenManager.i
+
+# target to preprocess a source file
+src/ScreenManager.cpp.i:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.i
+.PHONY : src/ScreenManager.cpp.i
+
+src/ScreenManager.s: src/ScreenManager.cpp.s
+.PHONY : src/ScreenManager.s
+
+# target to generate assembly for a file
+src/ScreenManager.cpp.s:
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.s
+.PHONY : src/ScreenManager.cpp.s
+
 src/System.o: src/System.cpp.o
 .PHONY : src/System.o
 
@@ -348,6 +396,12 @@ help:
 	@echo "... src/GroupManager.o"
 	@echo "... src/GroupManager.i"
 	@echo "... src/GroupManager.s"
+	@echo "... src/Screen.o"
+	@echo "... src/Screen.i"
+	@echo "... src/Screen.s"
+	@echo "... src/ScreenManager.o"
+	@echo "... src/ScreenManager.i"
+	@echo "... src/ScreenManager.s"
 	@echo "... src/System.o"
 	@echo "... src/System.i"
 	@echo "... src/System.s"

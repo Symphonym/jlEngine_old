@@ -5,6 +5,7 @@
 #include "Entity.h"
 #include "System.h"
 #include "Component.h"
+#include "Screen.h"
 
 class CollidableComponent : public jl::Component
 {
@@ -28,30 +29,45 @@ public:
 	};
 };
 
+class GameScreen : public jl::Screen
+{
+	virtual void events(sf::Event &event)
+	{
+
+	};
+	virtual void update(double deltatime)
+	{
+		//m_engine->get
+	};
+	virtual void draw()
+	{
+
+	};
+};
+
 int main(int argc, const char *args[])
 {
-
 	jl::Engine engine;
 	jl::WindowManager& wm = engine.getWindowManager();
-	//sf::Window& window = wm.createWindow("StartWindow");
-	//window.create(sf::VideoMode(800, 600), "HelloWorld", sf::Style::None);
-	//window.setPosition(sf::Vector2i(200, 100));
+	sf::Window& window = wm.createWindow("StartWindow");
+	window.create(sf::VideoMode(800, 600), "HelloWorld", sf::Style::None);
+	window.setPosition(sf::Vector2i(200, 100));
 
 	jl::SystemManager& sm = engine.getSystemManager();
 	sm.addSystem(new ColliderSystem());
 
-	ColliderSystem* sys = sm.getSystem<ColliderSystem>();
-	std::cout << "Active entities: " << sys->getActiveEntityCount() << std::endl;
+	ColliderSystem& sys = sm.getSystem<ColliderSystem>();
+	std::cout << "Active entities: " << sys.getActiveEntityCount() << std::endl;
 
 	jl::EntityManager& em = engine.getEntityManager();
 	jl::Entity& en1 = em.createEntity();
 	en1.addComponent(new CollidableComponent());
 	en1.addComponent(new PositionComponent());
 
-	std::cout << "Active entities: " << sys->getActiveEntityCount() << std::endl;
+	std::cout << "Active entities: " << sys.getActiveEntityCount() << std::endl;
 
 	en1.removeComponent<CollidableComponent>();
-	std::cout << "Active entities: " << sys->getActiveEntityCount() << std::endl;
+	std::cout << "Active entities: " << sys.getActiveEntityCount() << std::endl;
 
 /*	jl::GroupManager& gm = engine.getGroupManager();
 	std::cout << "en1 in group=" << gm.isInGroup(en1, "actors") << std::endl;

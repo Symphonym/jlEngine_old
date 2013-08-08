@@ -3,6 +3,7 @@
 
 #include <unordered_map>
 #include <typeindex>
+#include <typeinfo>
 #include <memory>
 
 namespace jl
@@ -35,6 +36,11 @@ namespace jl
 			removeSystem(getSystem<T>());
 		};
 
+		template<typename T> bool hasSystem()
+		{
+			return m_systems.find(typeid(T)) != m_systems.end();
+		};
+
 		void setSystemStatus(System *system, bool status);
 		template<typename T> void setSystemStatus(bool status)
 		{
@@ -47,10 +53,9 @@ namespace jl
 		// if it has one of it's targeted components.
 		bool refreshEntity(Entity &entity);
 
-		template<typename T> T* getSystem()
+		template<typename T> T& getSystem()
 		{
-			auto itr = m_systems.find(typeid(T));
-			return itr != m_systems.end() ? static_cast<T*>(itr->second.get()) : nullptr;
+			return static_cast<T&>(*m_systems.at(typeid(T)).get());
 		};
 		
 		const SystemBag& getAllSystems() const;

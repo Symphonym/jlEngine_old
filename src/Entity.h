@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <string>
 #include <typeindex>
+#include <typeinfo>
 #include <memory>
 #include "IdType.h"
 
@@ -52,6 +53,12 @@ namespace jl
 		// all functionality has been removed from it.
 		void removeAllComponents();
 
+		template<typename T> bool hasComponent()
+		{
+			return m_components.find(typeid(T)) != m_components.end();
+		};
+		bool hasComponent(const std::type_index &typeindex);
+
 		// Marks entity for recycling
 		void recycle();
 		// Refreshes Entity amongst the Systems
@@ -73,14 +80,13 @@ namespace jl
 		void removeFromGroups();
 
 
-		// Returns a pointer to the component of type T. If such a component
+		// Returns a reference to the component of type T. If such a component
 		// does not exist within the Entity, nullptr is returned.
-		template<typename T> T* getComponent()
+		template<typename T> T& getComponent()
 		{
-			Component *component = getComponent(typeid(T));
-			return component != nullptr ? static_cast<T*>(component) : nullptr;
+			return static_cast<T&>(getComponent(typeid(T)));
 		};
-		Component* getComponent(const std::type_index &typeindex); // Used almost exclusively internally
+		Component& getComponent(const std::type_index &typeindex); // Used almost exclusively internally
 
 
 		// Returns a read-only version of the component bag

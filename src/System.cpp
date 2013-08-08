@@ -64,7 +64,7 @@ namespace jl
 		for(auto itr = m_targetComponents.begin(); itr != m_targetComponents.end(); itr++)
 		{
 			// Make sure the Entity has ALL the required Components
-			if(entity.getComponent(*itr) == nullptr)
+			if(!entity.hasComponent(*itr))
 			{
 				hasTheComponents = false;
 				break;

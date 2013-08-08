@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include "Screen.h"
 #include <SFML/System.hpp>
 
 namespace jl
@@ -6,6 +7,7 @@ namespace jl
 	Engine::Engine() :
 		m_entityManager(this),
 		m_systemManager(this),
+		m_screenManager(this),
 		m_running(true),
 		m_deltaTime(0),
 		m_fps(0)
@@ -17,9 +19,11 @@ namespace jl
 	{
 		sf::Clock deltaClock, fpsClock;
 
+		sf::Event windowEvent;
 		while(m_running)
 		{
 
+			// Get FPS and deltaTime
 			m_deltaTime = deltaClock.restart().asSeconds();
 			if(fpsClock.getElapsedTime().asSeconds() > 1)
 			{
@@ -27,6 +31,7 @@ namespace jl
 				fpsClock.restart();
 			}
 
+			// Remove entities from all the related managers
 			Entity* removedEntity = m_entityManager.nextEntityRecycle();
 			while(removedEntity != nullptr)
 			{
@@ -37,12 +42,72 @@ namespace jl
 				m_entityManager.issueEntityRecycle();
 				removedEntity = m_entityManager.nextEntityRecycle();
 			}
+
+			// Handle all requests to delete Screens
+			m_screenManager.issueDeleteRequests();
+
+			// Engine halts when the state machine is empty
+			if(m_screenManager.isEmpty())
+			{
+				stop();
+				break;
+			}
+
+			// Iterate through Screens and the ones below depending on transparency			
+			while(m_window.pollEvent(windowEvent))
+			{
+				if(windowEvent.type == sf::Event::Closed)
+					m_window.close();
+
+				for(auto& screen : m_screenManager.getStack())
+				{
+					if(screen->isEventTransparent())
+						screen->events(windowEvent);
+				}
+			}
+			for(auto& screen : m_screenManager.getStack())
+			{
+				if(screen->isUpdateTransparent())
+					screen->update(getDelta());
+				if(screen->isDrawTransparent())
+					screen->draw();
+			}
+
+			m_window.display();
 		}
 	}
 
 	void Engine::stop()
 	{
 		m_running = false;
+	}
+
+
+	void Engine::createWindow(sf::VideoMode &mode, const sf::String &title, sf::Uint32 style, const sf::ContextSettings& context)
+	{
+		m_window.create(mode, title, style, context);
+	}
+
+	void Engine::setWindowTitle(const std::string &name)
+	{
+		m_window.setTitle(name);
+	}
+	void Engine::setWindowSize(std::size_t width, std::size_t height)
+	{
+		m_window.setSize(sf::Vector2u(width, height));
+	}
+
+	sf::Vector2i Engine::getWindowPosition() const
+	{
+		return m_window.getPosition();
+	}
+	sf::Vector2u Engine::getWindowSize() const
+	{
+		return m_window.getSize();
+	}
+	const sf::ContextSettings& Engine::getWindowContext() const
+	{
+		return m_window.getSettings();
 	}
 
 	std::size_t Engine::getFps() const
@@ -52,6 +117,11 @@ namespace jl
 	float Engine::getDelta() const
 	{
 		return m_deltaTime;
+	}
+
+	sf::Window& Engine::getWindow()
+	{
+		return m_window;
 	}
 
 	EntityManager& Engine::getEntityManager()
@@ -73,5 +143,9 @@ namespace jl
 	GroupManager& Engine::getGroupManager()
 	{
 		return m_groupManager;
+	}
+	ScreenManager& Engine::getScreenManager()
+	{
+		return m_screenManager;
 	}
 };

@@ -4,6 +4,7 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <typeindex>
+#include <typeinfo>
 #include <string>
 
 namespace jl
@@ -58,8 +59,6 @@ namespace jl
 		// accordingly.
 		void process();
 
-		// These functions are run before/after Entities are
-		// being processed by the System.
 		virtual void preProcess(){};
 		virtual void postProcess(){};
 		virtual void processEntity(Entity &entity) = 0;

@@ -43,6 +43,8 @@ CMakeFiles/entitysystem.dir/src/Engine.cpp.o
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h
@@ -90,6 +92,7 @@ CMakeFiles/entitysystem.dir/src/Entity.cpp.o
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h
@@ -104,6 +107,65 @@ CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
+CMakeFiles/entitysystem.dir/src/Screen.cpp.o
+ ../../linux/x64/include/SFML/Config.hpp
+ ../../linux/x64/include/SFML/System.hpp
+ ../../linux/x64/include/SFML/System/Clock.hpp
+ ../../linux/x64/include/SFML/System/Err.hpp
+ ../../linux/x64/include/SFML/System/Export.hpp
+ ../../linux/x64/include/SFML/System/InputStream.hpp
+ ../../linux/x64/include/SFML/System/Lock.hpp
+ ../../linux/x64/include/SFML/System/Mutex.hpp
+ ../../linux/x64/include/SFML/System/NonCopyable.hpp
+ ../../linux/x64/include/SFML/System/Sleep.hpp
+ ../../linux/x64/include/SFML/System/String.hpp
+ ../../linux/x64/include/SFML/System/Thread.hpp
+ ../../linux/x64/include/SFML/System/Thread.inl
+ ../../linux/x64/include/SFML/System/ThreadLocal.hpp
+ ../../linux/x64/include/SFML/System/ThreadLocalPtr.hpp
+ ../../linux/x64/include/SFML/System/ThreadLocalPtr.inl
+ ../../linux/x64/include/SFML/System/Time.hpp
+ ../../linux/x64/include/SFML/System/Utf.hpp
+ ../../linux/x64/include/SFML/System/Utf.inl
+ ../../linux/x64/include/SFML/System/Vector2.hpp
+ ../../linux/x64/include/SFML/System/Vector2.inl
+ ../../linux/x64/include/SFML/System/Vector3.hpp
+ ../../linux/x64/include/SFML/System/Vector3.inl
+ ../../linux/x64/include/SFML/Window.hpp
+ ../../linux/x64/include/SFML/Window/Context.hpp
+ ../../linux/x64/include/SFML/Window/ContextSettings.hpp
+ ../../linux/x64/include/SFML/Window/Event.hpp
+ ../../linux/x64/include/SFML/Window/Export.hpp
+ ../../linux/x64/include/SFML/Window/GlResource.hpp
+ ../../linux/x64/include/SFML/Window/Joystick.hpp
+ ../../linux/x64/include/SFML/Window/Keyboard.hpp
+ ../../linux/x64/include/SFML/Window/Mouse.hpp
+ ../../linux/x64/include/SFML/Window/VideoMode.hpp
+ ../../linux/x64/include/SFML/Window/Window.hpp
+ ../../linux/x64/include/SFML/Window/WindowHandle.hpp
+ ../../linux/x64/include/SFML/Window/WindowStyle.hpp
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.cpp
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h
+CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o
+ ../../linux/x64/include/SFML/Config.hpp
+ ../../linux/x64/include/SFML/System/Vector2.hpp
+ ../../linux/x64/include/SFML/System/Vector2.inl
+ ../../linux/x64/include/SFML/Window/Event.hpp
+ ../../linux/x64/include/SFML/Window/Export.hpp
+ ../../linux/x64/include/SFML/Window/Joystick.hpp
+ ../../linux/x64/include/SFML/Window/Keyboard.hpp
+ ../../linux/x64/include/SFML/Window/Mouse.hpp
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.cpp
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
 CMakeFiles/entitysystem.dir/src/System.cpp.o
  ../../linux/x64/include/SFML/Config.hpp
  ../../linux/x64/include/SFML/System.hpp
@@ -147,6 +209,7 @@ CMakeFiles/entitysystem.dir/src/System.cpp.o
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.cpp
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
@@ -274,6 +337,8 @@ CMakeFiles/entitysystem.dir/src/main.cpp.o
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
+ /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
  /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h

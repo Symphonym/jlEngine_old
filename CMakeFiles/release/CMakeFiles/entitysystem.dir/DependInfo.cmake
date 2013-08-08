@@ -8,6 +8,8 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/Entity.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/EntityManager.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
+  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/Screen.cpp.o"
+  "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/System.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o"
   "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.cpp" "/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles/entitysystem.dir/src/TagManager.cpp.o"

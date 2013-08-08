@@ -550,6 +550,14 @@ SFML/Config.hpp
 string
 -
 
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.cpp
+Engine.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
+Screen.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
+SFML/System.hpp
+-
+
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
 EntityManager.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/EntityManager.h
@@ -561,6 +569,18 @@ TagManager.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h
 GroupManager.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.h
+ScreenManager.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
+SFML/Window.hpp
+-
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.cpp
+Entity.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h
+Component.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Component.h
+Engine.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h
 unordered_map
@@ -568,6 +588,8 @@ unordered_map
 string
 -
 typeindex
+-
+typeinfo
 -
 memory
 -
@@ -598,6 +620,36 @@ IdType.h
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/IdType.h
 
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.cpp
+Screen.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
+Engine.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Engine.h
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
+SFML/Window/Event.hpp
+-
+bitset
+-
+string
+-
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.cpp
+ScreenManager.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
+Screen.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
+
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.h
+vector
+-
+memory
+-
+deque
+-
+SFML/Window/Event.hpp
+-
+
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.cpp
 System.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.h
@@ -615,25 +667,17 @@ unordered_map
 -
 typeindex
 -
-string
+typeinfo
 -
-
-/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.cpp
-SystemManager.h
-/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
-Component.h
-/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Component.h
-Entity.h
-/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Entity.h
-System.h
-/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.h
-iostream
+string
 -
 
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h
 unordered_map
 -
 typeindex
+-
+typeinfo
 -
 memory
 -
@@ -650,6 +694,8 @@ IdType.h
 unordered_map
 -
 string
+-
+memory
 -
 SFML/Window.hpp
 -
@@ -669,4 +715,6 @@ System.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/System.h
 Component.h
 /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Component.h
+Screen.h
+/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.h
 

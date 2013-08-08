@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Sc",
+				"Screen"
+			],
+			[
+				"Scre",
+				"ScreenManager"
+			],
+			[
+				"m_",
+				"m_activeEvents"
+			],
+			[
 				"COm",
 				"ComponentPtr"
 			],
@@ -58,10 +70,6 @@
 			[
 				"gr",
 				"groupListItr"
-			],
-			[
-				"m_",
-				"m_entitiesByGroup"
 			],
 			[
 				"enti",
@@ -376,9 +384,10 @@
 	},
 	"file_history":
 	[
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/In file included from /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.cpp",
+		"/usr/include/c++/4.7/bits/unique_ptr.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TypeIdRetriever.cpp",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TypeIdRetriever.h",
-		"/usr/include/c++/4.7/bits/unique_ptr.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TagManager.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.h",
@@ -446,6 +455,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"m_eventScreens",
+			";",
+			"Event",
+			";",
+			"m_activeEvents",
+			";",
+			"hashCode",
 			"const std::type_info",
 			"hashCode",
 			"TypeIdRetriever",
@@ -589,12 +605,32 @@
 		"selected_items":
 		[
 			[
-				"scren",
-				"src/Screen.h"
+				"eng",
+				"src/Engine.h"
 			],
 			[
 				"engine",
-				"src/Engine.h"
+				"src/Engine.cpp"
+			],
+			[
+				"sc",
+				"src/Screen.h"
+			],
+			[
+				"scre",
+				"src/ScreenManager.h"
+			],
+			[
+				"main",
+				"src/main.cpp"
+			],
+			[
+				"screenmanager",
+				"src/ScreenManager.cpp"
+			],
+			[
+				"scren",
+				"src/Screen.h"
 			],
 			[
 				"groupma",
@@ -607,10 +643,6 @@
 			[
 				"group",
 				"src/GroupManager.h"
-			],
-			[
-				"main",
-				"src/main.cpp"
 			],
 			[
 				"entityman",
@@ -690,7 +722,7 @@
 		[
 			[
 				"",
-				"~/Desktop/Projects/SFML_Network_TEST_1/SFML_Network_Test_1.sublime-project"
+				"~/Desktop/Projects/ENTITYSYSTEM_TEST_1/ENTITYSYSTEM_TEST_1.sublime-project"
 			]
 		],
 		"width": 380.0

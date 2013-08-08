@@ -13,16 +13,16 @@ namespace jl
 		// Checks whether or not the component exists within the Entity
 		bool exists(Entity &entity)
 		{
-			return entity.getComponent<T>() != nullptr;
+			return entity.hasComponent<T>();
 		};
 
 		// Returns the component stored by the specified name within
 		// the Entity. If the no component was found, nullptr is returned.
-		T* get(Entity &entity)
+		T& get(Entity &entity)
 		{
 			return entity.getComponent<T>();
 		};
-		T* operator()(Entity &entity)
+		T& operator()(Entity &entity)
 		{
 			return get(entity);
 		};

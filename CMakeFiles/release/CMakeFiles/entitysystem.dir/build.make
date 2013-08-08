@@ -187,9 +187,55 @@ CMakeFiles/entitysystem.dir/src/System.cpp.o.provides: CMakeFiles/entitysystem.d
 
 CMakeFiles/entitysystem.dir/src/System.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/System.cpp.o
 
+CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
+CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o: ../../src/ScreenManager.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.cpp
+
+CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.cpp > CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.i
+
+CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.cpp -o CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.s
+
+CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o.requires:
+.PHONY : CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o.requires
+
+CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o.provides: CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o.provides.build
+.PHONY : CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o.provides
+
+CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o
+
+CMakeFiles/entitysystem.dir/src/Screen.cpp.o: CMakeFiles/entitysystem.dir/flags.make
+CMakeFiles/entitysystem.dir/src/Screen.cpp.o: ../../src/Screen.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/Screen.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/Screen.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.cpp
+
+CMakeFiles/entitysystem.dir/src/Screen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/entitysystem.dir/src/Screen.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.cpp > CMakeFiles/entitysystem.dir/src/Screen.cpp.i
+
+CMakeFiles/entitysystem.dir/src/Screen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/entitysystem.dir/src/Screen.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Screen.cpp -o CMakeFiles/entitysystem.dir/src/Screen.cpp.s
+
+CMakeFiles/entitysystem.dir/src/Screen.cpp.o.requires:
+.PHONY : CMakeFiles/entitysystem.dir/src/Screen.cpp.o.requires
+
+CMakeFiles/entitysystem.dir/src/Screen.cpp.o.provides: CMakeFiles/entitysystem.dir/src/Screen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/entitysystem.dir/build.make CMakeFiles/entitysystem.dir/src/Screen.cpp.o.provides.build
+.PHONY : CMakeFiles/entitysystem.dir/src/Screen.cpp.o.provides
+
+CMakeFiles/entitysystem.dir/src/Screen.cpp.o.provides.build: CMakeFiles/entitysystem.dir/src/Screen.cpp.o
+
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o: ../../src/SystemManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/SystemManager.cpp
 
@@ -212,7 +258,7 @@ CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o.provides.build: CMakeFiles/e
 
 CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o: ../../src/WindowManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/WindowManager.cpp
 
@@ -235,7 +281,7 @@ CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o.provides.build: CMakeFiles/e
 
 CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: CMakeFiles/entitysystem.dir/flags.make
 CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o: ../../src/GroupManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/CMakeFiles/release/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o -c /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/GroupManager.cpp
 
@@ -264,6 +310,8 @@ entitysystem_OBJECTS = \
 "CMakeFiles/entitysystem.dir/src/main.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/Entity.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/System.cpp.o" \
+"CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o" \
+"CMakeFiles/entitysystem.dir/src/Screen.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o" \
 "CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o"
@@ -277,6 +325,8 @@ entitysystem_EXTERNAL_OBJECTS =
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/main.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/Entity.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/System.cpp.o
+../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o
+../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/Screen.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o
 ../../bin/entitysystem: CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o
@@ -300,6 +350,8 @@ CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/TagManager
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/main.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/Entity.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/System.cpp.o.requires
+CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/ScreenManager.cpp.o.requires
+CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/Screen.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/SystemManager.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/WindowManager.cpp.o.requires
 CMakeFiles/entitysystem.dir/requires: CMakeFiles/entitysystem.dir/src/GroupManager.cpp.o.requires

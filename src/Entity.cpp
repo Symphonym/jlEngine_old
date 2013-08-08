@@ -22,7 +22,7 @@ namespace jl
 		const std::type_info &typeinfo = typeid(*component);
 
 		// Overwrite existing component, unless it's the one we're trying to add
-		if(component != getComponent(typeinfo))
+		if(hasComponent(typeinfo) && (component != &getComponent(typeinfo)))
 			removeComponent(typeinfo);
 
 		// Move assignment operator is invoked, so no need for us to move
@@ -56,6 +56,11 @@ namespace jl
 		refresh();
 	}
 
+	bool Entity::hasComponent(const std::type_index &typeindex)
+	{
+		return m_components.find(typeindex) != m_components.end();
+	}
+
 	void Entity::setTag(const std::string &tag)
 	{
 		m_engine->getTagManager().tagEntity(*this, tag);
@@ -82,10 +87,9 @@ namespace jl
 		m_engine->getGroupManager().removeFromGroups(*this);
 	}
 
-	Component* Entity::getComponent(const std::type_index &typeindex)
+	Component& Entity::getComponent(const std::type_index &typeindex)
 	{
-		auto itr = m_components.find(typeindex);
-		return itr != m_components.end() ? itr->second.get() : nullptr;
+		return *m_components.at(typeindex);
 	}
 
 	const Entity::ComponentBag& Entity::getAllComponents() const
