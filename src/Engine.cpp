@@ -59,18 +59,24 @@ namespace jl
 				if(windowEvent.type == sf::Event::Closed)
 					m_window.close();
 
-				for(auto& screen : m_screenManager.getStack())
+				for(int i = 0; i < m_screenManager.getStack().size(); i++)
 				{
-					if(screen->isEventTransparent())
-						screen->events(windowEvent);
+					std::size_t indexAbove = i + 1;
+					if((indexAbove < m_screenManager.getStack().size() && m_screenManager.getStack()[indexAbove]->isEventTransparent()) ||
+						indexAbove >= m_screenManager.getStack().size()) // Top-most Screen, will naturally get called
+						m_screenManager.getStack()[i]->events(windowEvent);
 				}
 			}
-			for(auto& screen : m_screenManager.getStack())
+			for(int i = 0; i < m_screenManager.getStack().size(); i++)
 			{
-				if(screen->isUpdateTransparent())
-					screen->update(getDelta());
-				if(screen->isDrawTransparent())
-					screen->draw();
+				std::size_t indexAbove = i + 1;
+				if((indexAbove < m_screenManager.getStack().size() && m_screenManager.getStack()[indexAbove]->isUpdateTransparent()) ||
+					indexAbove >= m_screenManager.getStack().size()) // Top-most Screen, will naturally get called
+					m_screenManager.getStack()[i]->update(m_deltaTime);
+
+				if((indexAbove < m_screenManager.getStack().size() && m_screenManager.getStack()[indexAbove]->isDrawTransparent()) ||
+					indexAbove >= m_screenManager.getStack().size()) // Top-most Screen, will naturally get called
+					m_screenManager.getStack()[i]->draw();
 			}
 
 			m_window.display();

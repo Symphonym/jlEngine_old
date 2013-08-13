@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"m_delete",
+				"m_deleteRequests"
+			],
+			[
 				"Sc",
 				"Screen"
 			],
@@ -384,6 +388,7 @@
 	},
 	"file_history":
 	[
+		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/Exception.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/In file included from /home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/ScreenManager.cpp",
 		"/usr/include/c++/4.7/bits/unique_ptr.h",
 		"/home/symphonym/Desktop/Projects/ENTITYSYSTEM_TEST_1/src/TypeIdRetriever.cpp",
@@ -438,7 +443,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -455,6 +460,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Stack",
+			"m_engine->getScreenManager().",
 			"m_eventScreens",
 			";",
 			"Event",
@@ -546,6 +553,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"m_manager->",
 			"Engine",
 			"Game",
 			"System",
@@ -561,7 +569,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -605,6 +613,14 @@
 		"selected_items":
 		[
 			[
+				"scre",
+				"src/Screen.cpp"
+			],
+			[
+				"screen",
+				"src/ScreenManager.cpp"
+			],
+			[
 				"eng",
 				"src/Engine.h"
 			],
@@ -615,10 +631,6 @@
 			[
 				"sc",
 				"src/Screen.h"
-			],
-			[
-				"scre",
-				"src/ScreenManager.h"
 			],
 			[
 				"main",

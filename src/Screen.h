@@ -8,46 +8,47 @@
 namespace jl
 {
 	class Engine;
+	class ScreenManager;
 	class Screen
 	{
 	private:
 
-		friend class ScreenManager;
-		/* TODO
-		enum class TransparencyBits
+		//friend class ScreenManager;
+
+		enum TransparencyBits
 		{
 			Event = 0,
 			Update = 1,
 			Draw = 2
-		};*/
+		};
 
-		// || Draw Transparency || Update Transparency || Event Transparency ||
-		Engine *m_engine;
 		std::string m_name;
 		std::bitset<3> m_transparencyBits;
 
 	protected:
 
-		Screen();
+		Engine *m_engine; // Engine
+		ScreenManager *m_manager; // ScreenManager
 
-		void setScreen(const std::string &name, Screen *screen);
-		void pushScreen(const std::string &name, Screen *screen);
+		explicit Screen(Engine *engine, const std::string &name = "No Name");
+
+		void setScreen(Screen *screen);
+		void pushScreen(Screen *screen);
 		void popScreen();
 
 		void setEventTransparency(bool transparency);
 		void setUpdateTransparency(bool transparency);
 		void setDrawTransparency(bool transparency);
 
-		Engine& getEngine();
-
 	public:
 
-		// This method gets called once when the Screen given to the
-		// ScreenManager. A valid pointer to the Engine class is also
-		// guaranteed within this method.
-		virtual void setup(Engine *engine){};
+		// Called when the Screen enters the top of the stack 
+		virtual void onEnter(){};
+		// Called when the Screen leaves the top of the stack, not when
+		// it is removed from the stack entirely.
+		virtual void onLeave(){};
 
-		virtual void events(sf::Event &event) = 0;
+		virtual void events(const sf::Event &event) = 0;
 		virtual void update(double delta) = 0;
 		virtual void draw() = 0;
 

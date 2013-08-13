@@ -4,6 +4,7 @@
 namespace jl
 {
 	ScreenManager::ScreenManager(Engine *engine) :
+		m_deleteRequests(0),
 		m_engine(engine)
 	{
 
@@ -11,32 +12,41 @@ namespace jl
 	ScreenManager::~ScreenManager()
 	{
 		m_stack.clear();
-		m_deleteQueue.clear();
 	}
 
 	void ScreenManager::issueDeleteRequests()
 	{
-		m_deleteQueue.clear();
+		if(!m_stack.empty())
+		{
+			for(int i = 0; i < m_deleteRequests; i++)
+				m_stack.pop_back();
+		}
+
+		// New stack is now on top
+		if(!m_stack.empty())
+			m_stack.back()->onEnter();
+
+		m_deleteRequests = 0;
 	}
 
-	void ScreenManager::setScreen(const std::string &name, Screen *screen)
+	void ScreenManager::setScreen(Screen *screen)
 	{
 		while(!m_stack.empty())
 			popScreen();
 
-		pushScreen(name, screen);
+		pushScreen(screen);
 	}
-	void ScreenManager::pushScreen(const std::string &name, Screen *screen)
+	void ScreenManager::pushScreen(Screen *screen)
 	{
-		screen->m_engine = m_engine;
-		screen->m_name = name;
-		screen->setup(m_engine);
+		if(!m_stack.empty())
+			m_stack.back()->onLeave();
+
+		screen->onEnter();
 		m_stack.push_back(ScreenPtr(screen));
 	}
 	void ScreenManager::popScreen()
 	{
-		m_deleteQueue.push_front(std::move(m_stack.back()));
-		m_stack.pop_back();
+		++m_deleteRequests;
 	}
 
 	bool ScreenManager::isEmpty() const
@@ -51,10 +61,12 @@ namespace jl
 	const ScreenManager::ReadOnly_ScreenStack& ScreenManager::getEventScreens() const
 	{
 		m_eventScreens.clear();
-		for(auto& screen : m_stack)
+		for(int i = 0; i < m_stack.size(); i++)
 		{
-			if(screen->isEventTransparent())
-				m_eventScreens.push_back(screen.get());
+			std::size_t indexAbove = i + 1;
+			if((indexAbove < m_stack.size() && m_stack[indexAbove]->isEventTransparent()) ||
+				indexAbove >= m_stack.size()) // Top-most Screen, will naturally get called
+				m_eventScreens.push_back(m_stack[i].get());
 		}
 
 		return m_eventScreens;
@@ -62,10 +74,12 @@ namespace jl
 	const ScreenManager::ReadOnly_ScreenStack& ScreenManager::getUpdateScreens() const
 	{
 		m_updateScreens.clear();
-		for(auto& screen : m_stack)
+		for(int i = 0; i < m_stack.size(); i++)
 		{
-			if(screen->isUpdateTransparent())
-				m_updateScreens.push_back(screen.get());
+			std::size_t indexAbove = i + 1;
+			if((indexAbove < m_stack.size() && m_stack[indexAbove]->isUpdateTransparent()) ||
+				indexAbove >= m_stack.size()) // Top-most Screen, will naturally get called
+				m_updateScreens.push_back(m_stack[i].get());
 		}
 
 		return m_updateScreens;
@@ -73,10 +87,12 @@ namespace jl
 	const ScreenManager::ReadOnly_ScreenStack& ScreenManager::getDrawScreens() const
 	{
 		m_drawScreens.clear();
-		for(auto& screen : m_stack)
+		for(int i = 0; i < m_stack.size(); i++)
 		{
-			if(screen->isDrawTransparent())
-				m_drawScreens.push_back(screen.get());
+			std::size_t indexAbove = i + 1;
+			if((indexAbove < m_stack.size() && m_stack[indexAbove]->isDrawTransparent()) ||
+				indexAbove >= m_stack.size()) // Top-most Screen, will naturally get called
+				m_drawScreens.push_back(m_stack[i].get());
 		}
 
 		return m_drawScreens;

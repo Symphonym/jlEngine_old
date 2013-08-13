@@ -29,25 +29,47 @@ public:
 	};
 };
 
-class GameScreen : public jl::Screen
+struct GameScreen : public jl::Screen
 {
-	virtual void events(sf::Event &event)
-	{
-
-	};
-	virtual void update(double deltatime)
-	{
-		//m_engine->get
-	};
-	virtual void draw()
-	{
-
-	};
+	GameScreen(jl::Engine *engine, const std::string &name) : jl::Screen(engine, name){};
+	virtual void events(const sf::Event &event){};
+	virtual void update(double deltatime){};
+	virtual void draw(){};
 };
+struct InventoryScreen : public jl::Screen
+{
+	InventoryScreen(jl::Engine *engine, const std::string &name) : jl::Screen(engine, name)
+	{
+		setDrawTransparency(true);
+		setUpdateTransparency(true);
+	};
+	virtual void events(const sf::Event &event){};
+	virtual void update(double deltatime){};
+	virtual void draw(){};
+};
+struct PauseScreen : public jl::Screen
+{
+	PauseScreen(jl::Engine *engine, const std::string &name) : jl::Screen(engine, name)
+	{
+		setDrawTransparency(true);
+	};
+	virtual void events(const sf::Event &event){};
+	virtual void update(double deltatime){};
+	virtual void draw(){};
+};
+
 
 int main(int argc, const char *args[])
 {
 	jl::Engine engine;
+
+	jl::ScreenManager& scm = engine.getScreenManager();
+	scm.pushScreen<GameScreen>("GameScreen");
+	scm.pushScreen<PauseScreen>("PauseScreen");
+
+	for(auto& screen : scm.getDrawScreens())
+		std::cout << screen->getName() << std::endl;
+
 	jl::WindowManager& wm = engine.getWindowManager();
 	sf::Window& window = wm.createWindow("StartWindow");
 	window.create(sf::VideoMode(800, 600), "HelloWorld", sf::Style::None);
